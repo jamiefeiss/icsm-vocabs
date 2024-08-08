@@ -1,86 +1,159 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/icsm-distance-type/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/icsm-distance-type>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/icsm-distance-type/3d-vector> a skos:Concept,
+:3d-vector
+    a
+        skos:Concept ,
         surv:Distance ;
     skos:altLabel "Slope" ;
     skos:definition "The reduced observed slope distance between two survey marks." ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-distance-type> ;
+    skos:inScheme cs: ;
     skos:notation "3d-vector" ;
-    skos:prefLabel "3D Vector" .
+    skos:prefLabel "3D Vector" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-distance-type/ellipsoid> a skos:Concept,
+:ellipsoid
+    a
+        skos:Concept ,
         surv:Distance ;
     skos:definition "The minimal length of a curve that joins two survey marks on a reference ellipsoid" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-distance-type> ;
+    skos:inScheme cs: ;
     skos:notation "ellipsoid" ;
-    skos:prefLabel "Ellipsoid" .
+    skos:prefLabel "Ellipsoid" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-distance-type/geodetic> a skos:Concept,
+:geodetic
+    a
+        skos:Concept ,
         surv:Distance ;
     skos:definition "The minimal length of a curve that joins two survey marks on a geodetic reference ellipsoid" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-distance-type> ;
+    skos:inScheme cs: ;
     skos:notation "geodetic" ;
-    skos:prefLabel "Geodetic" .
+    skos:prefLabel "Geodetic" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-distance-type/ground> a skos:Concept,
+:ground
+    a
+        skos:Concept ,
         surv:Distance ;
     skos:altLabel "G" ;
     skos:definition "The reduced observed distance between two survey marks at ground level" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-distance-type> ;
+    skos:inScheme cs: ;
     skos:notation "ground" ;
-    skos:prefLabel "Ground" .
+    skos:prefLabel "Ground" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-distance-type/horizontal> a skos:Concept,
+:horizontal
+    a
+        skos:Concept ,
         surv:Distance ;
     skos:definition "The reduced observed distance between two survey marks further reduced to a horizontal plane" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-distance-type> ;
+    skos:inScheme cs: ;
     skos:notation "horizontal" ;
-    skos:prefLabel "Horizontal" .
+    skos:prefLabel "Horizontal" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-distance-type/mean-elevation> a skos:Concept,
+:mean-elevation
+    a
+        skos:Concept ,
         surv:Distance ;
     skos:altLabel "Horizontal ground distance at mean elevation" ;
     skos:definition " The reduced observed horizontal distance between two survey marks adjusted to the mean elevation of the line measured" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-distance-type> ;
+    skos:inScheme cs: ;
     skos:notation "mean-elevation" ;
-    skos:prefLabel "Mean Elevation" .
+    skos:prefLabel "Mean Elevation" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-distance-type/slope> a skos:Concept,
+:slope
+    a
+        skos:Concept ,
         surv:Distance ;
     skos:definition "The reduced observed distance between two survey marks at ground level" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-distance-type> ;
+    skos:inScheme cs: ;
     skos:notation "slope" ;
-    skos:prefLabel "Slope" .
+    skos:prefLabel "Slope" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-distance-type/spheroid> a skos:Concept,
+:spheroid
+    a
+        skos:Concept ,
         surv:Distance ;
     skos:altLabel "S" ;
     skos:definition "The shortest distance between two points along the surface of a reference spheroid" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-distance-type> ;
+    skos:inScheme cs: ;
     skos:notation "spheroid" ;
-    skos:prefLabel "Spheroid" .
+    skos:prefLabel "Spheroid" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-distance-type> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "ICSM Distance Type"@en ;
+    skos:hasTopConcept
+        :3d-vector ,
+        :ellipsoid ,
+        :geodetic ,
+        :ground ,
+        :horizontal ,
+        :mean-elevation ,
+        :slope ,
+        :spheroid ;
     skos:prefLabel "ICSM Distance Type" ;
-    skos:scopeNote "surv:Distance" .
+    skos:scopeNote "surv:Distance" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:40.930118"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:40.860549"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/SurveyObservations/icsm-distance-type.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/SurveyObservations/icsm-distance-type.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

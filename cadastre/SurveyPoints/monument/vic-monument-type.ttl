@@ -1,219 +1,444 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/vic-monument-form/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/vic-monument-form>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/bolt> a skos:Concept,
+:bolt
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "bolt" ;
-    skos:prefLabel "Bolt" .
+    skos:prefLabel "Bolt" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/chisel-cut> a skos:Concept,
+:chisel-cut
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "chisel-cut" ;
-    skos:prefLabel "Chisel Cut" .
+    skos:prefLabel "Chisel Cut" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/cross-head-nail> a skos:Concept,
+:cross-head-nail
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "cross-head-nail" ;
-    skos:prefLabel "Cross Head Nail" .
+    skos:prefLabel "Cross Head Nail" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/deep-driven-rod> a skos:Concept,
+:deep-driven-rod
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "deep-driven-rod" ;
-    skos:prefLabel "Deep Driven Rod" .
+    skos:prefLabel "Deep Driven Rod" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/drill-hole> a skos:Concept,
+:drill-hole
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "drill-hole" ;
-    skos:prefLabel "Drill Hole" .
+    skos:prefLabel "Drill Hole" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/drill-hole-with-wings> a skos:Concept,
+:drill-hole-with-wings
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "drill-hole-with-wings" ;
-    skos:prefLabel "Drill Hole with Wings" .
+    skos:prefLabel "Drill Hole with Wings" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/dumpy> a skos:Concept,
+:dumpy
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "dumpy" ;
-    skos:prefLabel "Dumpy" .
+    skos:prefLabel "Dumpy" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/g-i-nail> a skos:Concept,
+:g-i-nail
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "g-i-nail" ;
-    skos:prefLabel "G.I. Nail" .
+    skos:prefLabel "G.I. Nail" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/g-i-pipe> a skos:Concept,
+:g-i-pipe
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "g-i-pipe" ;
-    skos:prefLabel "G.I. Pipe" .
+    skos:prefLabel "G.I. Pipe" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/nail-in-join> a skos:Concept,
+:nail-in-join
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "nail-in-join" ;
-    skos:prefLabel "Nail in Join" .
+    skos:prefLabel "Nail in Join" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/nail-in-peg> a skos:Concept,
+:nail-in-peg
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "nail-in-peg" ;
-    skos:prefLabel "Nail in Peg" .
+    skos:prefLabel "Nail in Peg" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/nail-in-post> a skos:Concept,
+:nail-in-post
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "nail-in-post" ;
-    skos:prefLabel "Nail in Post" .
+    skos:prefLabel "Nail in Post" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/nail-in-rail> a skos:Concept,
+:nail-in-rail
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "nail-in-rail" ;
-    skos:prefLabel "Nail in Rail" .
+    skos:prefLabel "Nail in Rail" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/nm> a skos:Concept,
+:nm
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "nm" ;
-    skos:prefLabel "Not Marked" .
+    skos:prefLabel "Not Marked" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/other> a skos:Concept,
+:other
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "other" ;
-    skos:prefLabel "Other" .
+    skos:prefLabel "Other" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/peg> a skos:Concept,
+:peg
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "peg" ;
-    skos:prefLabel "Peg" .
+    skos:prefLabel "Peg" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/peg-in-trench> a skos:Concept,
+:peg-in-trench
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "peg-in-trench" ;
-    skos:prefLabel "Peg and Trench" .
+    skos:prefLabel "Peg and Trench" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/pin> a skos:Concept,
+:pin
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "pin" ;
-    skos:prefLabel "Pin" .
+    skos:prefLabel "Pin" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/pipe> a skos:Concept,
+:pipe
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "pipe" ;
-    skos:prefLabel "Pipe" .
+    skos:prefLabel "Pipe" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/plaque> a skos:Concept,
+:plaque
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "plaque" ;
-    skos:prefLabel "Plaque" .
+    skos:prefLabel "Plaque" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/reference-tree> a skos:Concept,
+:reference-tree
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "reference-tree" ;
-    skos:prefLabel "Reference Tree" .
+    skos:prefLabel "Reference Tree" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/rivet> a skos:Concept,
+:rivet
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "rivet" ;
-    skos:prefLabel "Rivet" .
+    skos:prefLabel "Rivet" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/rod> a skos:Concept,
+:rod
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "rod" ;
-    skos:prefLabel "Rod" .
+    skos:prefLabel "Rod" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/round-post> a skos:Concept,
+:round-post
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "round-post" ;
-    skos:prefLabel "Round Post" .
+    skos:prefLabel "Round Post" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/screw> a skos:Concept,
+:screw
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "screw" ;
-    skos:prefLabel "Screw" .
+    skos:prefLabel "Screw" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/spike> a skos:Concept,
+:spike
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "spike" ;
-    skos:prefLabel "Spike" .
+    skos:prefLabel "Spike" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/split-post> a skos:Concept,
+:split-post
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "split-post" ;
-    skos:prefLabel "Split Post" .
+    skos:prefLabel "Split Post" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/square-post> a skos:Concept,
+:square-post
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "square-post" ;
-    skos:prefLabel "Square Post" .
+    skos:prefLabel "Square Post" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/ssm> a skos:Concept,
+:ssm
+    a
+        skos:Concept ,
         surv:MonumentForm ;
     skos:altLabel "SSM" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "ssm" ;
-    skos:prefLabel "Standard Survey Mark" .
+    skos:prefLabel "Standard Survey Mark" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/star-picket> a skos:Concept,
+:star-picket
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "star-picket" ;
-    skos:prefLabel "Star Picket" .
+    skos:prefLabel "Star Picket" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/survey-nail> a skos:Concept,
+:survey-nail
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "survey-nail" ;
-    skos:prefLabel "Survey Nail" .
+    skos:prefLabel "Survey Nail" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form/tree> a skos:Concept,
+:tree
+    a
+        skos:Concept ,
         surv:MonumentForm ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-monument-form> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "tree" ;
-    skos:prefLabel "Tree" .
+    skos:prefLabel "Tree" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-monument-form> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "VIC Monument Form"@en ;
+    skos:hasTopConcept
+        :bolt ,
+        :chisel-cut ,
+        :cross-head-nail ,
+        :deep-driven-rod ,
+        :drill-hole ,
+        :drill-hole-with-wings ,
+        :dumpy ,
+        :g-i-nail ,
+        :g-i-pipe ,
+        :nail-in-join ,
+        :nail-in-peg ,
+        :nail-in-post ,
+        :nail-in-rail ,
+        :nm ,
+        :other ,
+        :peg ,
+        :peg-in-trench ,
+        :pin ,
+        :pipe ,
+        :plaque ,
+        :reference-tree ,
+        :rivet ,
+        :rod ,
+        :round-post ,
+        :screw ,
+        :spike ,
+        :split-post ,
+        :square-post ,
+        :ssm ,
+        :star-picket ,
+        :survey-nail ,
+        :tree ;
     skos:prefLabel "VIC Monument Form" ;
-    skos:scopeNote "surv:MonumentForm" .
+    skos:scopeNote "surv:MonumentForm" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:40.627786"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:40.537768"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/SurveyPoints/monument/vic-monument-type.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/SurveyPoints/monument/vic-monument-type.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

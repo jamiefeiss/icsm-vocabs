@@ -1,32 +1,70 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix termtype: <https://linked.data.gov.au/def/csdm/termtypes/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <http://www.opengis.net/def/crs/EPSG/0/>
+PREFIX cs: <http://www.opengis.net/def/crs/EPSG/0>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX termtype: <https://linked.data.gov.au/def/csdm/termtypes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://www.opengis.net/def/crs/EPSG/0/9528> a skos:Concept,
+:9528
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "9528" ;
-    skos:prefLabel "NZGD2000 + NZVD2016 height" .
+    skos:prefLabel "NZGD2000 + NZVD2016 height" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "NZ Compound Coordinate Reference Systems"@en ;
+    skos:hasTopConcept :9528 ;
     skos:prefLabel "NZ Compound Coordinate Reference Systems" ;
-    skos:scopeNote "termtype:AllowableCoordinateReferenceSystem" .
+    skos:scopeNote "termtype:AllowableCoordinateReferenceSystem" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:34.590683"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:34.527766"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/CSD-Header/nz-compound-crs.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/CSD-Header/nz-compound-crs.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

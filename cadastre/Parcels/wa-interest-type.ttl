@@ -1,711 +1,1180 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/wa-interest-type/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/wa-interest-type>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/165-pda> a skos:Concept,
+:165-pda
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:definition "Notification" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "165-pda" ;
-    skos:prefLabel "Notification: Sec. 165 of the P. & D. Act" .
+    skos:prefLabel "Notification: Sec. 165 of the P. & D. Act" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/70a-tla> a skos:Concept,
+:70a-tla
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:definition " Notification" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "70a-tla" ;
-    skos:prefLabel "Notification: Sec. 70A of the T.L.A" .
+    skos:prefLabel "Notification: Sec. 70A of the T.L.A" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/carbon-covenant-benefit> a skos:Concept,
+:carbon-covenant-benefit
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "26" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "carbon covenant-benefit" ;
-    skos:prefLabel "Carbon Covenant - Benefit" .
+    skos:prefLabel "Carbon Covenant - Benefit" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/carbon-covenant-burden> a skos:Concept,
+:carbon-covenant-burden
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "25" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "carbon covenant-burden" ;
-    skos:prefLabel "Carbon Covenant - Burden" .
+    skos:prefLabel "Carbon Covenant - Burden" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/carbon-right> a skos:Concept,
+:carbon-right
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "23" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "carbon-right" ;
-    skos:prefLabel "Carbon Right" .
+    skos:prefLabel "Carbon Right" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/caveat> a skos:Concept,
+:caveat
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "28" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "caveat" ;
-    skos:prefLabel "Caveat" .
+    skos:prefLabel "Caveat" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/contaminated-site> a skos:Concept,
+:contaminated-site
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "27" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "contaminated site" ;
-    skos:prefLabel "Contaminated Site" .
+    skos:prefLabel "Contaminated Site" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/covenant-laa-15> a skos:Concept,
+:covenant-laa-15
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "406" ;
     skos:definition "SEC 15 OF THE LAA" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "covenant-laa-15" ;
-    skos:prefLabel "Covenant - LAA 15" .
+    skos:prefLabel "Covenant - LAA 15" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/crown-grant-in-trust> a skos:Concept,
+:crown-grant-in-trust
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "17" ;
     skos:definition "Crown Grant in Trust" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "crown-grant-in-trust" ;
-    skos:prefLabel "Crown Grant in Trust" .
+    skos:prefLabel "Crown Grant in Trust" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/crown-lease> a skos:Concept,
+:crown-lease
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:definition "Crown Lease" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "crown-lease" ;
-    skos:prefLabel "Crown Lease" .
+    skos:prefLabel "Crown Lease" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ct> a skos:Concept,
+:ct
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:definition "Certificate of Title" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ct" ;
-    skos:prefLabel "Certificate of Title" .
+    skos:prefLabel "Certificate of Title" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-cta-38-reg-40-vehicle-access> a skos:Concept,
+:ease-cta-38-reg-40-vehicle-access
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "443" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 40 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-cta-38-reg-40-vehicle-access" ;
-    skos:prefLabel "Ease:CTA 38 Reg 40 Vehicle Access" .
+    skos:prefLabel "Ease:CTA 38 Reg 40 Vehicle Access" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-cta-38-reg-41-light-air> a skos:Concept,
+:ease-cta-38-reg-41-light-air
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "444" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 41 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-cta-38-reg-41-light-air" ;
-    skos:prefLabel "Ease:CTA 38 Reg 41 Light & Air" .
+    skos:prefLabel "Ease:CTA 38 Reg 41 Light & Air" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-cta-38-reg-42-party-wall> a skos:Concept,
+:ease-cta-38-reg-42-party-wall
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "445" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 42 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-cta-38-reg-42-party-wall" ;
-    skos:prefLabel "Ease:CTA 38 Reg 42 Party Wall" .
+    skos:prefLabel "Ease:CTA 38 Reg 42 Party Wall" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-cta-38-reg-43-intrusion> a skos:Concept,
+:ease-cta-38-reg-43-intrusion
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "446" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 43 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-cta-38-reg-43-intrusion" ;
-    skos:prefLabel "Ease:CTA 38 Reg 43 Intrusion" .
+    skos:prefLabel "Ease:CTA 38 Reg 43 Intrusion" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-cta-38-reg-44-ped-access> a skos:Concept,
+:ease-cta-38-reg-44-ped-access
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "447" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 44 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-cta-38-reg-44-ped-access" ;
-    skos:prefLabel "Ease:CTA 38 Reg 44 Ped Access" .
+    skos:prefLabel "Ease:CTA 38 Reg 44 Ped Access" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-cta-38-reg-45-ease-in-gross> a skos:Concept,
+:ease-cta-38-reg-45-ease-in-gross
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "448" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 45 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-cta-38-reg-45-ease-in-gross" ;
-    skos:prefLabel "Ease:CTA 38 Reg 45 Ease in Gross" .
+    skos:prefLabel "Ease:CTA 38 Reg 45 Ease in Gross" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-cta-38-reg-46-drainage> a skos:Concept,
+:ease-cta-38-reg-46-drainage
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "450" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 46 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-cta-38-reg-46-drainage" ;
-    skos:prefLabel "Ease:CTA 38 Reg 46 Drainage" .
+    skos:prefLabel "Ease:CTA 38 Reg 46 Drainage" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-cta-38-reg-46-energy> a skos:Concept,
+:ease-cta-38-reg-46-energy
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "457" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 46 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-cta-38-reg-46-energy" ;
-    skos:prefLabel "Ease:CTA 38 Reg 46 Energy" .
+    skos:prefLabel "Ease:CTA 38 Reg 46 Energy" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-cta-38-reg-46-gas-supply> a skos:Concept,
+:ease-cta-38-reg-46-gas-supply
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "451" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 46 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-cta-38-reg-46-gas-supply" ;
-    skos:prefLabel "Ease:CTA 38 Reg 46 Gas supply" .
+    skos:prefLabel "Ease:CTA 38 Reg 46 Gas supply" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-cta-38-reg-46-overhead-comms> a skos:Concept,
+:ease-cta-38-reg-46-overhead-comms
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "454" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 46 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-cta-38-reg-46-overhead-comms" ;
-    skos:prefLabel "Ease:CTA 38 Reg 46 Overhead Comms" .
+    skos:prefLabel "Ease:CTA 38 Reg 46 Overhead Comms" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-cta-38-reg-46-overhead-elec> a skos:Concept,
+:ease-cta-38-reg-46-overhead-elec
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "452" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 46 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-cta-38-reg-46-overhead-elec" ;
-    skos:prefLabel "Ease:CTA 38 Reg 46 Overhead Elec" .
+    skos:prefLabel "Ease:CTA 38 Reg 46 Overhead Elec" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-cta-38-reg-46-sewerage> a skos:Concept,
+:ease-cta-38-reg-46-sewerage
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "456" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 46 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-cta-38-reg-46-sewerage" ;
-    skos:prefLabel "Ease:CTA 38 Reg 46 Sewerage" .
+    skos:prefLabel "Ease:CTA 38 Reg 46 Sewerage" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-cta-38-reg-46-undgnd-comms> a skos:Concept,
+:ease-cta-38-reg-46-undgnd-comms
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "455" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 46 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-cta-38-reg-46-undgnd-comms" ;
-    skos:prefLabel "Ease:CTA 38 Reg 46 UndGnd Comms" .
+    skos:prefLabel "Ease:CTA 38 Reg 46 UndGnd Comms" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-cta-38-reg-46-undgnd-elec> a skos:Concept,
+:ease-cta-38-reg-46-undgnd-elec
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "453" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 46 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-cta-38-reg-46-undgnd-elec" ;
-    skos:prefLabel "Ease:CTA 38 Reg 46 UndGnd Elec" .
+    skos:prefLabel "Ease:CTA 38 Reg 46 UndGnd Elec" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-cta-38-reg-46-water-supply> a skos:Concept,
+:ease-cta-38-reg-46-water-supply
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "449" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 46 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-cta-38-reg-46-water-supply" ;
-    skos:prefLabel "Ease:CTA 38 Reg 46 Water supply" .
+    skos:prefLabel "Ease:CTA 38 Reg 46 Water supply" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-sta-33-reg-31-vehicle-access> a skos:Concept,
+:ease-sta-33-reg-31-vehicle-access
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "418" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 31 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-sta-33-reg-31-vehicle-access" ;
-    skos:prefLabel "Ease:STA 33 Reg 31 Vehicle Access" .
+    skos:prefLabel "Ease:STA 33 Reg 31 Vehicle Access" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-sta-33-reg-32-light-air> a skos:Concept,
+:ease-sta-33-reg-32-light-air
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "420" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 32 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-sta-33-reg-32-light-air" ;
-    skos:prefLabel "Ease:STA 33 Reg 32 Light & Air" .
+    skos:prefLabel "Ease:STA 33 Reg 32 Light & Air" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-sta-33-reg-33-party-wall> a skos:Concept,
+:ease-sta-33-reg-33-party-wall
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "422" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 33 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-sta-33-reg-33-party-wall" ;
-    skos:prefLabel "Ease:STA 33 Reg 33 Party Wall" .
+    skos:prefLabel "Ease:STA 33 Reg 33 Party Wall" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-sta-33-reg-34-intrusion> a skos:Concept,
+:ease-sta-33-reg-34-intrusion
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "424" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 34 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-sta-33-reg-34-intrusion" ;
-    skos:prefLabel "Ease:STA 33 Reg 34 Intrusion" .
+    skos:prefLabel "Ease:STA 33 Reg 34 Intrusion" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-sta-33-reg-35-ped-access> a skos:Concept,
+:ease-sta-33-reg-35-ped-access
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "426" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 35 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-sta-33-reg-35-ped-access" ;
-    skos:prefLabel "Ease:STA 33 Reg 35 Ped Access" .
+    skos:prefLabel "Ease:STA 33 Reg 35 Ped Access" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-sta-33-reg-36-ease-in-gross> a skos:Concept,
+:ease-sta-33-reg-36-ease-in-gross
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "427" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 36 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-sta-33-reg-36-ease-in-gross" ;
-    skos:prefLabel "Ease:STA 33 Reg 36 Ease in Gross" .
+    skos:prefLabel "Ease:STA 33 Reg 36 Ease in Gross" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-sta-33-reg-37-drainage> a skos:Concept,
+:ease-sta-33-reg-37-drainage
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "429" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 37 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-sta-33-reg-37-drainage" ;
-    skos:prefLabel "Ease:STA 33 Reg 37 Drainage" .
+    skos:prefLabel "Ease:STA 33 Reg 37 Drainage" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-sta-33-reg-37-gas-supply> a skos:Concept,
+:ease-sta-33-reg-37-gas-supply
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "430" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 37 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-sta-33-reg-37-gas-supply" ;
-    skos:prefLabel "Ease:STA 33 Reg 37 Gas supply" .
+    skos:prefLabel "Ease:STA 33 Reg 37 Gas supply" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-sta-33-reg-37-overhead-comms> a skos:Concept,
+:ease-sta-33-reg-37-overhead-comms
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "433" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 37 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-sta-33-reg-37-overhead-comms" ;
-    skos:prefLabel "Ease:STA 33 Reg 37 Overhead Comms" .
+    skos:prefLabel "Ease:STA 33 Reg 37 Overhead Comms" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-sta-33-reg-37-overhead-elec> a skos:Concept,
+:ease-sta-33-reg-37-overhead-elec
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "431" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 37 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-sta-33-reg-37-overhead-elec" ;
-    skos:prefLabel "Ease:STA 33 Reg 37 Overhead Elec" .
+    skos:prefLabel "Ease:STA 33 Reg 37 Overhead Elec" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-sta-33-reg-37-sewerage> a skos:Concept,
+:ease-sta-33-reg-37-sewerage
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "435" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 37 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-sta-33-reg-37-sewerage" ;
-    skos:prefLabel "Ease:STA 33 Reg 37 Sewerage" .
+    skos:prefLabel "Ease:STA 33 Reg 37 Sewerage" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-sta-33-reg-37-undgnd-comms> a skos:Concept,
+:ease-sta-33-reg-37-undgnd-comms
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "434" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 37 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-sta-33-reg-37-undgnd-comms" ;
-    skos:prefLabel "Ease:STA 33 Reg 37 UndGnd Comms" .
+    skos:prefLabel "Ease:STA 33 Reg 37 UndGnd Comms" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-sta-33-reg-37-undgnd-elec> a skos:Concept,
+:ease-sta-33-reg-37-undgnd-elec
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "432" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 37 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-sta-33-reg-37-undgnd-elec" ;
-    skos:prefLabel "Ease:STA 33 Reg 37 UndGnd Elec" .
+    skos:prefLabel "Ease:STA 33 Reg 37 UndGnd Elec" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/ease-sta-33-reg-37-water-supply> a skos:Concept,
+:ease-sta-33-reg-37-water-supply
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "428" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 37 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "ease-sta-33-reg-37-water-supply" ;
-    skos:prefLabel "Ease:STA 33 Reg 37 Water supply" .
+    skos:prefLabel "Ease:STA 33 Reg 37 Water supply" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easeben-cta-38> a skos:Concept,
+:easeben-cta-38
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "442" ;
     skos:definition "Sec. 38 of the CTA 2018" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easeben-cta-38" ;
-    skos:prefLabel "EaseBen:CTA 38" .
+    skos:prefLabel "EaseBen:CTA 38" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easeben-sta3333> a skos:Concept,
+:easeben-sta3333
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "417" ;
     skos:definition "Sec. 33 of the STA 1985" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easeben:sta3333" ;
-    skos:prefLabel "EaseBen:STA 33" .
+    skos:prefLabel "EaseBen:STA 33" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-doc> a skos:Concept,
+:easement-doc
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "29" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-doc" ;
-    skos:prefLabel "Easement - doc" .
+    skos:prefLabel "Easement - doc" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-in-gross-laa-195> a skos:Concept,
+:easement-in-gross-laa-195
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "31" ;
     skos:definition "SEC 195 OF THE LAA" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-in-gross-laa-195" ;
-    skos:prefLabel "Easement in Gross - LAA 195" .
+    skos:prefLabel "Easement in Gross - LAA 195" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-laa-144> a skos:Concept,
+:easement-laa-144
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "30" ;
     skos:definition "SEC 144 OF THE LAA" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-laa-144" ;
-    skos:prefLabel "Easement - LAA 144" .
+    skos:prefLabel "Easement - LAA 144" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-p-d-167-reg-33-a-> a skos:Concept,
+:easement-p-d-167-reg-33-a-
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "412" ;
     skos:definition "SEC 167 OF THE P&D ACT, REG 33(a)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-p-d-167-reg-33(a)" ;
-    skos:prefLabel "Easement - P&D 167 Reg 33(a)" .
+    skos:prefLabel "Easement - P&D 167 Reg 33(a)" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-p-d-167-reg-33-b-> a skos:Concept,
+:easement-p-d-167-reg-33-b-
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "413" ;
     skos:definition "SEC 167 OF THE P&D ACT, REG 33(b)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-p-d-167-reg-33(b)" ;
-    skos:prefLabel "Easement - P&D 167 Reg 33(b)" .
+    skos:prefLabel "Easement - P&D 167 Reg 33(b)" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-p-d-167-reg-33-c-> a skos:Concept,
+:easement-p-d-167-reg-33-c-
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "414" ;
     skos:definition "SEC 167 OF THE P&D ACT, REG 33(c)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-p-d-167-reg-33(c)" ;
-    skos:prefLabel "Easement - P&D 167 Reg 33(c)" .
+    skos:prefLabel "Easement - P&D 167 Reg 33(c)" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-p-d-167-reg-33-d-> a skos:Concept,
+:easement-p-d-167-reg-33-d-
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "415" ;
     skos:definition "SEC 167 OF THE P&D ACT, REG 33(d)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-p-d-167-reg-33(d)" ;
-    skos:prefLabel "Easement - P&D 167 Reg 33(d)" .
+    skos:prefLabel "Easement - P&D 167 Reg 33(d)" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-p-d-167-reg-33-e-> a skos:Concept,
+:easement-p-d-167-reg-33-e-
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "416" ;
     skos:definition "SEC 167 OF THE P&D ACT, REG 33(e)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-p-d-167-reg-33(e)" ;
-    skos:prefLabel "Easement - P&D 167 Reg 33(e)" .
+    skos:prefLabel "Easement - P&D 167 Reg 33(e)" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-p-d-167-reg-5> a skos:Concept,
+:easement-p-d-167-reg-5
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "407" ;
     skos:definition "SEC 167 OF THE P&D ACT, REG 5" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-p-d-167-reg-5" ;
-    skos:prefLabel "Easement - P&D 167 Reg 5" .
+    skos:prefLabel "Easement - P&D 167 Reg 5" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-p-d-167-reg-6> a skos:Concept,
+:easement-p-d-167-reg-6
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "408" ;
     skos:definition "SEC 167 OF THE P&D ACT, REG 6" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-p-d-167-reg-6" ;
-    skos:prefLabel "Easement - P&D 167 Reg 6" .
+    skos:prefLabel "Easement - P&D 167 Reg 6" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-p-d-167-reg-7> a skos:Concept,
+:easement-p-d-167-reg-7
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "409" ;
     skos:definition "SEC 167 OF THE P&D ACT, REG 7" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-p-d-167-reg-7" ;
-    skos:prefLabel "Easement - P&D 167 Reg 7" .
+    skos:prefLabel "Easement - P&D 167 Reg 7" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-p-d-167-reg-8> a skos:Concept,
+:easement-p-d-167-reg-8
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "410" ;
     skos:definition "SEC 167 OF THE P&D ACT, REG 8" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-p-d-167-reg-8" ;
-    skos:prefLabel "Easement - P&D 167 Reg 8" .
+    skos:prefLabel "Easement - P&D 167 Reg 8" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-p-d-167-reg-9> a skos:Concept,
+:easement-p-d-167-reg-9
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "411" ;
     skos:definition "SEC 167 OF THE P&D ACT, REG 9" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-p-d-167-reg-9" ;
-    skos:prefLabel "Easement - P&D 167 Reg 9" .
+    skos:prefLabel "Easement - P&D 167 Reg 9" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-public-access-laa-195-196> a skos:Concept,
+:easement-public-access-laa-195-196
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "32" ;
     skos:definition "SEC 195 & 196 OF THE LAA" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-public-access-laa-195-196" ;
-    skos:prefLabel "Easement Public Access LAA 195/196" .
+    skos:prefLabel "Easement Public Access LAA 195/196" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-sta-5D> a skos:Concept,
+:easement-sta-5D
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "33" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-sta-5D" ;
-    skos:prefLabel "Easement - STA 5D" .
+    skos:prefLabel "Easement - STA 5D" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-tla-136C> a skos:Concept,
+:easement-tla-136C
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "34" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-tla-136C" ;
-    skos:prefLabel "Easement - TLA 136C" .
+    skos:prefLabel "Easement - TLA 136C" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-tla-136D> a skos:Concept,
+:easement-tla-136D
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-tla-136D" ;
-    skos:prefLabel "Easement - TLA 136D" .
+    skos:prefLabel "Easement - TLA 136D" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-tla-167A> a skos:Concept,
+:easement-tla-167A
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "35" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-tla-167A" ;
-    skos:prefLabel "Easement - TLA 167A" .
+    skos:prefLabel "Easement - TLA 167A" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-tp-d-27A-reg-5> a skos:Concept,
+:easement-tp-d-27A-reg-5
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "36" ;
     skos:definition "SEC 27A OF THE TP&D ACT, REG 5" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-tp-d-27A-reg-5" ;
-    skos:prefLabel "Easement - TP&D 27A Reg 5" .
+    skos:prefLabel "Easement - TP&D 27A Reg 5" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-tp-d-27A-reg-6> a skos:Concept,
+:easement-tp-d-27A-reg-6
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "37" ;
     skos:definition "SEC 27A OF THE TP&D ACT, REG 6" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-tp-d-27A-reg-6" ;
-    skos:prefLabel "Easement - TP&D 27A Reg 6" .
+    skos:prefLabel "Easement - TP&D 27A Reg 6" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-tp-d-27A-reg-7> a skos:Concept,
+:easement-tp-d-27A-reg-7
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "38" ;
     skos:definition "SEC 27A OF THE TP&D ACT, REG 7" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-tp-d-27A-reg-7" ;
-    skos:prefLabel "Easement - TP&D 27A Reg 7" .
+    skos:prefLabel "Easement - TP&D 27A Reg 7" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-tp-d-27A-reg-8> a skos:Concept,
+:easement-tp-d-27A-reg-8
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "39" ;
     skos:definition "SEC 27A OF THE TP&D ACT, REG 8" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-tp-d-27A-reg-8" ;
-    skos:prefLabel "Easement - TP&D 27A Reg 8" .
+    skos:prefLabel "Easement - TP&D 27A Reg 8" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/easement-tp-d-27A-reg-9> a skos:Concept,
+:easement-tp-d-27A-reg-9
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "40" ;
     skos:definition "SEC 27A OF THE TP&D ACT, REG 9" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "easement-tp-d-27A-reg-9" ;
-    skos:prefLabel "Easement - TP&D 27A Reg 9" .
+    skos:prefLabel "Easement - TP&D 27A Reg 9" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/enrollment-country> a skos:Concept,
+:enrollment-country
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:definition "Enrollment Country" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "enrollment-country" ;
-    skos:prefLabel "Enrollment Country" .
+    skos:prefLabel "Enrollment Country" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/enrollment-town> a skos:Concept,
+:enrollment-town
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:definition "Enrollment Town" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "enrollment-town" ;
-    skos:prefLabel "Enrollment Town" .
+    skos:prefLabel "Enrollment Town" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/freehold-lease> a skos:Concept,
+:freehold-lease
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "400" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "freehold-lease" ;
-    skos:prefLabel "Freehold Lease" .
+    skos:prefLabel "Freehold Lease" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/land-record> a skos:Concept,
+:land-record
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:definition "Crown Land Record" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "land-record" ;
-    skos:prefLabel "Land Record" .
+    skos:prefLabel "Land Record" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/memorial> a skos:Concept,
+:memorial
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "401" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "memorial" ;
-    skos:prefLabel "Memorial" .
+    skos:prefLabel "Memorial" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/memorial-book> a skos:Concept,
+:memorial-book
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:definition "Land held under Deed" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "memorial-book" ;
-    skos:prefLabel "Memorial Book" .
+    skos:prefLabel "Memorial Book" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/native-title> a skos:Concept,
+:native-title
+    a
+        skos:Concept ,
         surv:InterestType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "native-title" ;
-    skos:prefLabel "Non-extinguishment of Native Title" .
+    skos:prefLabel "Non-extinguishment of Native Title" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/notification> a skos:Concept,
+:notification
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "402" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "notification" ;
-    skos:prefLabel "Notification" .
+    skos:prefLabel "Notification" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/profit-a-prendre> a skos:Concept,
+:profit-a-prendre
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "403" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "profit-a-prendre" ;
-    skos:prefLabel "Profit a prendre" .
+    skos:prefLabel "Profit a prendre" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/res-cov-CTA-38-reg-53-land-use> a skos:Concept,
+:res-cov-CTA-38-reg-53-land-use
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "459" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 53 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "res-cov-CTA 38-reg-53-land-use" ;
-    skos:prefLabel "RestrCov:CTA 38 Reg 53 Land use" .
+    skos:prefLabel "RestrCov:CTA 38 Reg 53 Land use" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/res-cov-cta-38-reg-52-rowW> a skos:Concept,
+:res-cov-cta-38-reg-52-rowW
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "458" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 52 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "res-cov-cta-38-reg-52-rowW" ;
-    skos:prefLabel "RestrCov:CTA 38 Reg 52 RoW" .
+    skos:prefLabel "RestrCov:CTA 38 Reg 52 RoW" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/res-cov-cta-38-reg-54-conserv> a skos:Concept,
+:res-cov-cta-38-reg-54-conserv
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "460" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 54 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "res-cov-cta-38-reg-54-conserv" ;
-    skos:prefLabel "RestrCov:CTA 38 Reg 54 Conserv" .
+    skos:prefLabel "RestrCov:CTA 38 Reg 54 Conserv" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/res-cov-cta-38-reg-55-build-env> a skos:Concept,
+:res-cov-cta-38-reg-55-build-env
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "461" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 55 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "res-cov-cta-38-reg-55-build-env" ;
-    skos:prefLabel "RestrCov:CTA 38 Reg 55 Build Env" .
+    skos:prefLabel "RestrCov:CTA 38 Reg 55 Build Env" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/res-cov-cta-38-reg-56-fire> a skos:Concept,
+:res-cov-cta-38-reg-56-fire
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "462" ;
     skos:definition "Sec. 38 of the CTA 2018, Reg 56 of the CTAR 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "res-cov-cta-38-reg-56-fire" ;
-    skos:prefLabel "RestrCov:CTA 38 Reg 56 Fire" .
+    skos:prefLabel "RestrCov:CTA 38 Reg 56 Fire" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/restrcov-sta-33-reg-43-row> a skos:Concept,
+:restrcov-sta-33-reg-43-row
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "436" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 43 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "restrcov-sta-33-reg-43-row" ;
-    skos:prefLabel "RestrCov:STA 33 Reg 43 RoW" .
+    skos:prefLabel "RestrCov:STA 33 Reg 43 RoW" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/restrcov-sta-33-reg-44-land-use> a skos:Concept,
+:restrcov-sta-33-reg-44-land-use
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "437" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 44 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "restrcov-sta-33-reg-44-land-use" ;
-    skos:prefLabel "RestrCov:STA 33 Reg 44 Land use" .
+    skos:prefLabel "RestrCov:STA 33 Reg 44 Land use" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/restrcov-sta-33-reg-45-conserv> a skos:Concept,
+:restrcov-sta-33-reg-45-conserv
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "438" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 45 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "restrcov-sta-33-reg-45-conserv" ;
-    skos:prefLabel "RestrCov:STA 33 Reg 45 Conserv" .
+    skos:prefLabel "RestrCov:STA 33 Reg 45 Conserv" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/restrcov-sta-33-reg-46-Build-Env> a skos:Concept,
+:restrcov-sta-33-reg-46-Build-Env
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "439" ;
     skos:definition "Sec. 33 of the STA 1985,-reg-46 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "restrcov-sta-33-reg-46 Build Env" ;
-    skos:prefLabel "RestrCov:STA 33 Reg 46 Build Env" .
+    skos:prefLabel "RestrCov:STA 33 Reg 46 Build Env" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/restrcov-sta-33-reg-47-Fire> a skos:Concept,
+:restrcov-sta-33-reg-47-Fire
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "440" ;
     skos:definition "Sec. 33 of the STA 1985, Reg 47 of the STGR 2019" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "restrcov-sta-33-reg-47 Fire" ;
-    skos:prefLabel "RestrCov:STA 33 Reg 47 Fire" .
+    skos:prefLabel "RestrCov:STA 33 Reg 47 Fire" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/restrictive-covenant-benefit> a skos:Concept,
+:restrictive-covenant-benefit
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "404" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "restrictive-covenant-benefit" ;
-    skos:prefLabel "Restrictive Covenant - Benefit" .
+    skos:prefLabel "Restrictive Covenant - Benefit" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/restrictive-covenant-burden> a skos:Concept,
+:restrictive-covenant-burden
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "405" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "restrictive-covenant-burden" ;
-    skos:prefLabel "Restrictive Covenant - Burden" .
+    skos:prefLabel "Restrictive Covenant - Burden" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type/tree-plantation> a skos:Concept,
+:tree-plantation
+    a
+        skos:Concept ,
         surv:InterestType ;
     skos:altLabel "24" ;
     skos:definition "Interest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-interest-type> ;
+    skos:inScheme cs: ;
     skos:notation "tree-plantation" ;
-    skos:prefLabel "Tree Plantation" .
+    skos:prefLabel "Tree Plantation" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-interest-type> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "WA Memorial Types"@en ;
+    skos:hasTopConcept
+        :165-pda ,
+        :70a-tla ,
+        :carbon-covenant-benefit ,
+        :carbon-covenant-burden ,
+        :carbon-right ,
+        :caveat ,
+        :contaminated-site ,
+        :covenant-laa-15 ,
+        :crown-grant-in-trust ,
+        :crown-lease ,
+        :ct ,
+        :ease-cta-38-reg-40-vehicle-access ,
+        :ease-cta-38-reg-41-light-air ,
+        :ease-cta-38-reg-42-party-wall ,
+        :ease-cta-38-reg-43-intrusion ,
+        :ease-cta-38-reg-44-ped-access ,
+        :ease-cta-38-reg-45-ease-in-gross ,
+        :ease-cta-38-reg-46-drainage ,
+        :ease-cta-38-reg-46-energy ,
+        :ease-cta-38-reg-46-gas-supply ,
+        :ease-cta-38-reg-46-overhead-comms ,
+        :ease-cta-38-reg-46-overhead-elec ,
+        :ease-cta-38-reg-46-sewerage ,
+        :ease-cta-38-reg-46-undgnd-comms ,
+        :ease-cta-38-reg-46-undgnd-elec ,
+        :ease-cta-38-reg-46-water-supply ,
+        :ease-sta-33-reg-31-vehicle-access ,
+        :ease-sta-33-reg-32-light-air ,
+        :ease-sta-33-reg-33-party-wall ,
+        :ease-sta-33-reg-34-intrusion ,
+        :ease-sta-33-reg-35-ped-access ,
+        :ease-sta-33-reg-36-ease-in-gross ,
+        :ease-sta-33-reg-37-drainage ,
+        :ease-sta-33-reg-37-gas-supply ,
+        :ease-sta-33-reg-37-overhead-comms ,
+        :ease-sta-33-reg-37-overhead-elec ,
+        :ease-sta-33-reg-37-sewerage ,
+        :ease-sta-33-reg-37-undgnd-comms ,
+        :ease-sta-33-reg-37-undgnd-elec ,
+        :ease-sta-33-reg-37-water-supply ,
+        :easeben-cta-38 ,
+        :easeben-sta3333 ,
+        :easement-doc ,
+        :easement-in-gross-laa-195 ,
+        :easement-laa-144 ,
+        :easement-p-d-167-reg-33-a- ,
+        :easement-p-d-167-reg-33-b- ,
+        :easement-p-d-167-reg-33-c- ,
+        :easement-p-d-167-reg-33-d- ,
+        :easement-p-d-167-reg-33-e- ,
+        :easement-p-d-167-reg-5 ,
+        :easement-p-d-167-reg-6 ,
+        :easement-p-d-167-reg-7 ,
+        :easement-p-d-167-reg-8 ,
+        :easement-p-d-167-reg-9 ,
+        :easement-public-access-laa-195-196 ,
+        :easement-sta-5D ,
+        :easement-tla-136C ,
+        :easement-tla-136D ,
+        :easement-tla-167A ,
+        :easement-tp-d-27A-reg-5 ,
+        :easement-tp-d-27A-reg-6 ,
+        :easement-tp-d-27A-reg-7 ,
+        :easement-tp-d-27A-reg-8 ,
+        :easement-tp-d-27A-reg-9 ,
+        :enrollment-country ,
+        :enrollment-town ,
+        :freehold-lease ,
+        :land-record ,
+        :memorial ,
+        :memorial-book ,
+        :native-title ,
+        :notification ,
+        :profit-a-prendre ,
+        :res-cov-CTA-38-reg-53-land-use ,
+        :res-cov-cta-38-reg-52-rowW ,
+        :res-cov-cta-38-reg-54-conserv ,
+        :res-cov-cta-38-reg-55-build-env ,
+        :res-cov-cta-38-reg-56-fire ,
+        :restrcov-sta-33-reg-43-row ,
+        :restrcov-sta-33-reg-44-land-use ,
+        :restrcov-sta-33-reg-45-conserv ,
+        :restrcov-sta-33-reg-46-Build-Env ,
+        :restrcov-sta-33-reg-47-Fire ,
+        :restrictive-covenant-benefit ,
+        :restrictive-covenant-burden ,
+        :tree-plantation ;
     skos:prefLabel "WA Memorial Types" ;
-    skos:scopeNote "surv:InterestType" .
+    skos:scopeNote "surv:InterestType" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:43.247736"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:43.108375"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/wa-interest-type.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/wa-interest-type.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

@@ -1,184 +1,317 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix termtype: <https://linked.data.gov.au/def/csdm/termtypes/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/wa-parcel-purpose/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/wa-parcel-purpose>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX termtype: <https://linked.data.gov.au/def/csdm/termtypes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/closed-road> a skos:Concept,
+:closed-road
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "7" ;
     skos:definition "Closed Road" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "closed-road" ;
-    skos:prefLabel "Closed Road" .
+    skos:prefLabel "Closed Road" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/common-property> a skos:Concept,
+:common-property
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "16,19" ;
     skos:definition "Common Property" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "common-property" ;
-    skos:prefLabel "Common Property" .
+    skos:prefLabel "Common Property" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/community-building-lot> a skos:Concept,
+:community-building-lot
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "19" ;
     skos:definition "Community Building Lot" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "community-building-lot" ;
-    skos:prefLabel "Community Building Lot" .
+    skos:prefLabel "Community Building Lot" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/community-land-lot> a skos:Concept,
+:community-land-lot
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "16" ;
     skos:definition "Community Land Lot" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "community-land-lot" ;
-    skos:prefLabel "Community Land Lot" .
+    skos:prefLabel "Community Land Lot" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/land-act> a skos:Concept,
+:land-act
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "1" ;
     skos:definition "Land Act" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "land-act" ;
-    skos:prefLabel "Land Act" .
+    skos:prefLabel "Land Act" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/location> a skos:Concept,
+:location
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "1" ;
     skos:definition "Location" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "location" ;
-    skos:prefLabel "Location" .
+    skos:prefLabel "Location" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/lot> a skos:Concept,
+:lot
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "1" ;
     skos:definition "Lot" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "lot" ;
-    skos:prefLabel "Lot" .
+    skos:prefLabel "Lot" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/miscellaneous> a skos:Concept,
+:miscellaneous
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "1" ;
     skos:definition "Miscellaneous" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "miscellaneous" ;
-    skos:prefLabel "Miscellaneous" .
+    skos:prefLabel "Miscellaneous" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/pedestrian-access-way> a skos:Concept,
+:pedestrian-access-way
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "1" ;
     skos:definition "Pedestrian Access Way" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "pedestrian-access-way" ;
-    skos:prefLabel "Pedestrian Access Way" .
+    skos:prefLabel "Pedestrian Access Way" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/railway> a skos:Concept,
+:railway
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "10" ;
     skos:definition "Railway" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "railway" ;
-    skos:prefLabel "Railway" .
+    skos:prefLabel "Railway" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/reserve-vest> a skos:Concept,
+:reserve-vest
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "Reserve for Recreation" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "reserve-vest" ;
-    skos:prefLabel "Reserve to Vest for Recreation" .
+    skos:prefLabel "Reserve to Vest for Recreation" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/right-of-way> a skos:Concept,
+:right-of-way
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "1" ;
     skos:definition "Right of Way" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "right-of-way" ;
-    skos:prefLabel "Right of Way" .
+    skos:prefLabel "Right of Way" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/road> a skos:Concept,
+:road
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "13" ;
     skos:definition "Road" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "road" ;
-    skos:prefLabel "Road" .
+    skos:prefLabel "Road" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/road-vest> a skos:Concept,
+:road-vest
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "Road to Vest" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation " road-vest" ;
-    skos:prefLabel "Road to Vest" .
+    skos:prefLabel "Road to Vest" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/road-widening> a skos:Concept,
+:road-widening
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "13" ;
     skos:definition "Road Widening" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "road-widening" ;
-    skos:prefLabel "Road Widening" .
+    skos:prefLabel "Road Widening" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/strata-lot> a skos:Concept,
+:strata-lot
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "19" ;
     skos:definition "Strata Lot" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "strata-lot" ;
-    skos:prefLabel "Strata Lot" .
+    skos:prefLabel "Strata Lot" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/survey-strata-lot> a skos:Concept,
+:survey-strata-lot
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "16" ;
     skos:definition "Survey-Strata Lot" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "survey-strata-lot" ;
-    skos:prefLabel "Survey-Strata Lot" .
+    skos:prefLabel "Survey-Strata Lot" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/townsite-lot> a skos:Concept,
+:townsite-lot
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "1" ;
     skos:definition "Townsite Lot" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "townsite-lot" ;
-    skos:prefLabel "Townsite Lot" .
+    skos:prefLabel "Townsite Lot" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/transfer-of-land-act> a skos:Concept,
+:transfer-of-land-act
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "1" ;
     skos:definition "Transfer of Land Act" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "transfer-of-land-act" ;
-    skos:prefLabel "Transfer of Land Act" .
+    skos:prefLabel "Transfer of Land Act" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose/vacant-strata-lot> a skos:Concept,
+:vacant-strata-lot
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:altLabel "19" ;
     skos:definition "Vacant Strata Lot" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "vacant-strata-lot" ;
-    skos:prefLabel "Vacant Strata Lot" .
+    skos:prefLabel "Vacant Strata Lot" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-purpose> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "WA Primary Parcel Purpose"@en ;
+    skos:hasTopConcept
+        :closed-road ,
+        :common-property ,
+        :community-building-lot ,
+        :community-land-lot ,
+        :land-act ,
+        :location ,
+        :lot ,
+        :miscellaneous ,
+        :pedestrian-access-way ,
+        :railway ,
+        :reserve-vest ,
+        :right-of-way ,
+        :road ,
+        :road-vest ,
+        :road-widening ,
+        :strata-lot ,
+        :survey-strata-lot ,
+        :townsite-lot ,
+        :transfer-of-land-act ,
+        :vacant-strata-lot ;
     skos:prefLabel "WA Primary Parcel Purpose" ;
-    skos:scopeNote "termtype:ParcelPurpose" .
+    skos:scopeNote "termtype:ParcelPurpose" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:44.719858"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:44.639050"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/wa-parcel-purpose.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/wa-parcel-purpose.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

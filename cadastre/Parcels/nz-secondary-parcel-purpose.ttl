@@ -1,117 +1,215 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix termtype: <https://linked.data.gov.au/def/csdm/termtypes/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX termtype: <https://linked.data.gov.au/def/csdm/termtypes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose/c-fc> a skos:Concept,
+:c-fc
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A parcel defining an exclusive use area on a flat plan / cross lease dataset" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "c-fc" ;
-    skos:prefLabel "Covenant – Flat/Crosslease" .
+    skos:prefLabel "Covenant – Flat/Crosslease" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose/c-l> a skos:Concept,
+:c-l
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A parcel defining an area subject to an agreement where one person promises that they will give, do, or not do, something to their land, e.g., QE2 Covenant, Consent Notice under Section 221 of the RMA 1991" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "c-l" ;
-    skos:prefLabel "Covenant - Land" .
+    skos:prefLabel "Covenant - Land" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose/c2br> a skos:Concept,
+:c2br
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A parcel defining the part of a covenant to be revoked" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "c2br" ;
-    skos:prefLabel "Covenant to be revoked" .
+    skos:prefLabel "Covenant to be revoked" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose/ce> a skos:Concept,
+:ce
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A parcel to be created as part of a Treaty Settlement, such as a nohoanga entitlement" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "ce" ;
-    skos:prefLabel "Customary Entitlement" .
+    skos:prefLabel "Customary Entitlement" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose/clb> a skos:Concept,
+:clb
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A parcel created to enable a record of title comprising a leasehold estate and a share of the estate in fee simple to be issued" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "clb" ;
-    skos:prefLabel "Cross Lease Building" .
+    skos:prefLabel "Cross Lease Building" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose/cmt> a skos:Concept,
+:cmt
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A parcel defined on an order from the High Court recognising a customary marine title (CMT)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "cmt" ;
-    skos:prefLabel "Customary Marine Title" .
+    skos:prefLabel "Customary Marine Title" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose/e> a skos:Concept,
+:e
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A parcel creating a right by the owner of a property to use part of the land in another title for a specific purpose, for example water right, right of way, etc., and includes Māori Roadways in the nature of an easement" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "e" ;
-    skos:prefLabel "Easement" .
+    skos:prefLabel "Easement" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose/e2bs> a skos:Concept,
+:e2bs
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A parcel defining the part of an easement to be surrendered" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "e2bs" ;
-    skos:prefLabel "Easements to be Surrendered" .
+    skos:prefLabel "Easements to be Surrendered" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose/es> a skos:Concept,
+:es
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A parcel of land created by the registration of an instrument for one or more of the following purposes: (a) to contribute to the protection of conservation values by, in particular, (i) maintaining or enhancing the natural functioning of the adjacent sea, river, or lake; or (ii) maintaining or enhancing water quality; or (iii) maintaining or enhancing aquatic habitats; or (iv) protecting the natural values associated with the esplanade reserve or esplanade strip; or (v) mitigating natural hazards; or (b) to enable public access to or along any sea, river, or lake; or (c) to enable public recreational use of the esplanade reserve or esplanade strip and adjacent sea, river, or lake, where the use is compatible with conservation values (sections 2 and 229 of the Resource Management Act 1991)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "es" ;
-    skos:prefLabel "Esplanade Strip" .
+    skos:prefLabel "Esplanade Strip" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose/l> a skos:Concept,
+:l
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A parcel defining a Lease including one requiring subdivision consent under the Resource Management Act 1991" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "l" ;
-    skos:prefLabel "Lease" .
+    skos:prefLabel "Lease" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose/l-p> a skos:Concept,
+:l-p
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A parcel defining a Licence/Permit parcel, for example mining permit area, crown forest licence, etc." ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "l-p" ;
-    skos:prefLabel "Licence/Permit" .
+    skos:prefLabel "Licence/Permit" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose/ms-m> a skos:Concept,
+:ms-m
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A parcel defining a movable marginal strip in accordance with rule 84 Cadastral Survey Rules 2021" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "ms-m" ;
-    skos:prefLabel "Marginal Strip-Movable" .
+    skos:prefLabel "Marginal Strip-Movable" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose/rr> a skos:Concept,
+:rr
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A parcel defining part of a reserve to be reclassified for a different purpose under the Reserves Act 1977, where a separate title will not issue" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "rr" ;
-    skos:prefLabel "Reserve Reclassification" .
+    skos:prefLabel "Reserve Reclassification" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-secondary-parcel-purpose> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "NZ Secondary Parcel Purpose"@en ;
+    skos:hasTopConcept
+        :c-fc ,
+        :c-l ,
+        :c2br ,
+        :ce ,
+        :clb ,
+        :cmt ,
+        :e ,
+        :e2bs ,
+        :es ,
+        :l ,
+        :l-p ,
+        :ms-m ,
+        :rr ;
     skos:prefLabel "NZ Secondary Parcel Purpose" ;
-    skos:scopeNote "termtype:ParcelPurpose" .
+    skos:scopeNote "termtype:ParcelPurpose" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:41.215198"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:41.140555"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/nz-secondary-parcel-purpose.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/nz-secondary-parcel-purpose.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

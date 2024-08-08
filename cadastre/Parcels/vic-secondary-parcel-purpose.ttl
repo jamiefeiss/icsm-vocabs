@@ -1,62 +1,131 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix termtype: <https://linked.data.gov.au/def/csdm/termtypes/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/vic-secondary-parcel-purpose/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/vic-secondary-parcel-purpose>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX termtype: <https://linked.data.gov.au/def/csdm/termtypes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/vic-secondary-parcel-purpose/crown-land-service> a skos:Concept,
+:crown-land-service
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-secondary-parcel-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "crown-land-service" ;
-    skos:prefLabel "Crown Land Service" .
+    skos:prefLabel "Crown Land Service" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-secondary-parcel-purpose/d> a skos:Concept,
+:d
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-secondary-parcel-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "d" ;
-    skos:prefLabel "Drainage" .
+    skos:prefLabel "Drainage" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-secondary-parcel-purpose/d-s> a skos:Concept,
+:d-s
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-secondary-parcel-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "d-s" ;
-    skos:prefLabel "Drainage and Sewerage" .
+    skos:prefLabel "Drainage and Sewerage" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-secondary-parcel-purpose/depth-limitation> a skos:Concept,
+:depth-limitation
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-secondary-parcel-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "depth-limitation" ;
-    skos:prefLabel "Depth Limitation" .
+    skos:prefLabel "Depth Limitation" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-secondary-parcel-purpose/easement> a skos:Concept,
+:easement
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-secondary-parcel-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "easement" ;
-    skos:prefLabel "Easement" .
+    skos:prefLabel "Easement" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-secondary-parcel-purpose/restriction> a skos:Concept,
+:restriction
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-secondary-parcel-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "restriction" ;
-    skos:prefLabel "Restriction" .
+    skos:prefLabel "Restriction" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-secondary-parcel-purpose> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "VIC Secondary Parcel Purpose"@en ;
+    skos:hasTopConcept
+        :crown-land-service ,
+        :d ,
+        :d-s ,
+        :depth-limitation ,
+        :easement ,
+        :restriction ;
     skos:prefLabel "VIC Secondary Parcel Purpose" ;
-    skos:scopeNote "termtype:ParcelPurpose" .
+    skos:scopeNote "termtype:ParcelPurpose" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:36.381581"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:36.313275"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/vic-secondary-parcel-purpose.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/vic-secondary-parcel-purpose.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

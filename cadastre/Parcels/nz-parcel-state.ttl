@@ -1,75 +1,143 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix termtype: <https://linked.data.gov.au/def/csdm/termtypes/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/nz-parcel-state/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/nz-parcel-state>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX termtype: <https://linked.data.gov.au/def/csdm/termtypes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-state/a> a skos:Concept,
+:a
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "The parcel must be amalgamated with one or more parcels created by the survey when the survey is deposited" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "a" ;
-    skos:prefLabel "affected" .
+    skos:prefLabel "affected" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-state/c> a skos:Concept,
+:c
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "The parcel is being created by the survey" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "c" ;
-    skos:prefLabel "created" .
+    skos:prefLabel "created" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-state/enc> a skos:Concept,
+:enc
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "The parcel has been subject to natural erosion and/or accretion and the definition of the parcel has been/should be updated. Relevant where the parcel affected by the accretion/erosion is not extinguished by the survey" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "enc" ;
-    skos:prefLabel "encroached" .
+    skos:prefLabel "encroached" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-state/exist> a skos:Concept,
+:exist
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "The parcel is referenced by the survey" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "exist" ;
-    skos:prefLabel "existing" .
+    skos:prefLabel "existing" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-state/exting> a skos:Concept,
+:exting
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "The parcel is being replaced by one or more parcels created by the survey" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "exting" ;
-    skos:prefLabel "extinguished" .
+    skos:prefLabel "extinguished" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-state/prop> a skos:Concept,
+:prop
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "The parcel is introduced on the survey but has not actually been ‘created’. This will generally only apply to parcels such as Future Development Units (FDU) on a Proposed Unit Development plan (PUD). The parcel will be created in a subsequent plan, e.g., Stage 1 of the Unit Development" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "prop" ;
-    skos:prefLabel "proposed" .
+    skos:prefLabel "proposed" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-state/ref> a skos:Concept,
+:ref
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "The parcel is referenced by the survey" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "ref" ;
-    skos:prefLabel "referenced" .
+    skos:prefLabel "referenced" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-state> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "NZ Parcel State"@en ;
+    skos:hasTopConcept
+        :a ,
+        :c ,
+        :enc ,
+        :exist ,
+        :exting ,
+        :prop ,
+        :ref ;
     skos:prefLabel "NZ Parcel State" ;
-    skos:scopeNote "termtype:ParcelState" .
+    skos:scopeNote "termtype:ParcelState" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:35.097436"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:35.026720"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/nz-parcel-state.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/nz-parcel-state.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

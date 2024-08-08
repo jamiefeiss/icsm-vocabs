@@ -1,103 +1,191 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix termtype: <https://linked.data.gov.au/def/csdm/termtypes/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/wa-parcel-state/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/wa-parcel-state>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX termtype: <https://linked.data.gov.au/def/csdm/termtypes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-state/abuttal> a skos:Concept,
+:abuttal
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "Document State:parcel is relevant to display" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "abuttal" ;
-    skos:prefLabel "Abuttal" .
+    skos:prefLabel "Abuttal" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-state/affected-tenure> a skos:Concept,
+:affected-tenure
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "Document state: The parcel is to be encumbured" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "affected-tenure" ;
-    skos:prefLabel "Affected tenure" .
+    skos:prefLabel "Affected tenure" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-state/cancelled> a skos:Concept,
+:cancelled
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "Document and Database State: Plan/Scheme unregistered and cancelled" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "cancelled" ;
-    skos:prefLabel "Cancelled" .
+    skos:prefLabel "Cancelled" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-state/created> a skos:Concept,
+:created
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "Document state: The parcel is being created by the survey" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "created" ;
-    skos:prefLabel "Created" .
+    skos:prefLabel "Created" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-state/former-tenure> a skos:Concept,
+:former-tenure
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "Document state: The parcel is being replaced by one or more parcels created by the survey" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "former-tenure" ;
-    skos:prefLabel "Former tenure" .
+    skos:prefLabel "Former tenure" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-state/inset> a skos:Concept,
+:inset
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "Document state: The parcel is an inset lot" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "inset" ;
-    skos:prefLabel "Inset" .
+    skos:prefLabel "Inset" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-state/lodged> a skos:Concept,
+:lodged
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "Database state: Lodged" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "lodged" ;
-    skos:prefLabel "Lodged" .
+    skos:prefLabel "Lodged" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-state/referenced> a skos:Concept,
+:referenced
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "Document state: The parcel is referenced by the survey" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "referenced" ;
-    skos:prefLabel "Referenced" .
+    skos:prefLabel "Referenced" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-state/registered> a skos:Concept,
+:registered
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "Database state: Element registered" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "registered" ;
-    skos:prefLabel "Registered" .
+    skos:prefLabel "Registered" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-state/superseded> a skos:Concept,
+:superseded
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition " Database State: Element further subdivided or removed" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "superseded" ;
-    skos:prefLabel "Superseded" .
+    skos:prefLabel "Superseded" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-state/terminated> a skos:Concept,
+:terminated
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "Document and Database State: Plan/Scheme terminated" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "terminated" ;
-    skos:prefLabel "Terminated" .
+    skos:prefLabel "Terminated" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-parcel-state> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "WA Parcel State"@en ;
+    skos:hasTopConcept
+        :abuttal ,
+        :affected-tenure ,
+        :cancelled ,
+        :created ,
+        :former-tenure ,
+        :inset ,
+        :lodged ,
+        :referenced ,
+        :registered ,
+        :superseded ,
+        :terminated ;
     skos:prefLabel "WA Parcel State" ;
-    skos:scopeNote "termtype:ParcelState" .
+    skos:scopeNote "termtype:ParcelState" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:36.555889"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:36.484077"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/wa-parcel-state.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/wa-parcel-state.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.
