@@ -149,7 +149,14 @@ PREFIX skos: <{SKOS}>
     skos:exactMatch fsdf:transport ;
     skos:altLabel "Transport" ;
 .
+
+:Water 
+    skos:exactMatch fsdf:water ;
+.
 """)
+
+# add in FSDF sub-themes
+g.parse("fsdf-themes-non-top.ttl")
 
 # alter CS IRI
 NEW_CS = URIRef("https://linked.data.gov.au/def/unggim-themes")
