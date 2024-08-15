@@ -1,5 +1,5 @@
-PREFIX cs: <https://linkeddataops.adaptcentre.ie/vocabularies/unggim-data-themes#>
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX : <https://linked.data.gov.au/def/unggim-themes/>
+PREFIX cs: <https://linked.data.gov.au/def/unggim-themes>
 PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX fsdf: <https://linked.data.gov.au/def/fsdf/themes/>
@@ -8,12 +8,13 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX vann: <http://purl.org/vocab/vann/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://osi.ie/prime2>
-    a dcat:Catalog ;
-    dcat:themeTaxonomy cs: ;
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
 .
 
-cs:Addresses
+:Addresses
     a skos:Concept ;
     skos:altLabel "Geocoded Addressing" ;
     skos:definition "An Address is a structured label, usually containing a property number, a street name and a locality name. It’s used to identify a plot of land, a building or part of a building, or some other construction, together with coordinates indicating their geographic position. Addresses are often used as a proxy for other data themes such as Land Parcels." ;
@@ -23,7 +24,7 @@ cs:Addresses
     skos:topConceptOf cs: ;
 .
 
-cs:Buildings-Settlements
+:Buildings-Settlements
     a skos:Concept ;
     skos:definition "A Building refers to any roofed structure permanently constructed or erected on its site, for the protection of humans, animals, things, or the production of economic goods. Settlements are collections of buildings and associated features where a community carries out socio-economic activities." ;
     skos:exactMatch fsdf:buildings-and-settlements ;
@@ -32,7 +33,7 @@ cs:Buildings-Settlements
     skos:topConceptOf cs: ;
 .
 
-cs:Elevation-Depth
+:Elevation-Depth
     a skos:Concept ;
     skos:definition "The Elevation and Depth theme describes the surface of the Earth both on land and under a body of water, relative to a vertical datum." ;
     skos:exactMatch fsdf:elevation-and-depth ;
@@ -41,7 +42,7 @@ cs:Elevation-Depth
     skos:topConceptOf cs: ;
 .
 
-cs:FunctionalAreas
+:FunctionalAreas
     a skos:Concept ;
     skos:altLabel "Administrative Boundaries" ;
     skos:definition "Functional Areas are the geographical extent of administrative, legislative, regulatory, electoral, statistical, governance, service delivery and activity management areas." ;
@@ -51,7 +52,7 @@ cs:FunctionalAreas
     skos:topConceptOf cs: ;
 .
 
-cs:GCRF
+:GCRF
     a skos:Concept ;
     skos:definition "The Global Geodetic Reference Frame is the framework which allows users to precisely determine and express locations on the Earth, as well as to quantify changes of the Earth in space and time. It is not a data theme in the sense of the other themes, but it is a prerequisite for the accurate collection, integration, and use of all other geospatial data." ;
     skos:exactMatch fsdf:positioning ;
@@ -60,7 +61,7 @@ cs:GCRF
     skos:topConceptOf cs: ;
 .
 
-cs:GeographicalNames
+:GeographicalNames
     a skos:Concept ;
     skos:altLabel "Place Names" ;
     skos:definition "Geographical Names provide orientation and identity to places. They are location identifiers for cultural and physical features of the real world, such as regions, settlements, or any feature of public or historical interest. They are often used as a proxy for other data themes such as Buildings and Settlements." ;
@@ -70,7 +71,7 @@ cs:GeographicalNames
     skos:topConceptOf cs: ;
 .
 
-cs:Geology-Soils
+:Geology-Soils
     a skos:Concept ;
     skos:definition "Geology is the composition and properties of geologic materials (rocks and sediments) underground and outcropping at the Earth’s surface. It includes bedrock, aquifers, geomorphology for land and marine environments, mineral resources and overlying soils. Soils are the upper part of the Earth’s crust, formed by mineral particles, organic matter, water, air, and living organisms." ;
     skos:inScheme cs: ;
@@ -78,7 +79,7 @@ cs:Geology-Soils
     skos:topConceptOf cs: ;
 .
 
-cs:LandCover-LandUse
+:LandCover-LandUse
     a skos:Concept ;
     skos:definition "Land Cover represent the physical and biological cover of the Earth’s surface. Land Use is the current and future planned management, and modification of the natural environment for different human purposes or economic activities." ;
     skos:exactMatch fsdf:land-cover-and-land-use ;
@@ -87,7 +88,7 @@ cs:LandCover-LandUse
     skos:topConceptOf cs: ;
 .
 
-cs:LandParcels
+:LandParcels
     a skos:Concept ;
     skos:altLabel "Place Names" ;
     skos:definition "Land Parcels are areas of land or more generally of the Earth’s surface (land and/or water) under common rights (such as ownership or easements), claims (such as minerals or indigenous land) or use. This theme can include individual fields and cadastral parcels." ;
@@ -97,7 +98,7 @@ cs:LandParcels
     skos:topConceptOf cs: ;
 .
 
-cs:Orthoimagery
+:Orthoimagery
     a skos:Concept ;
     skos:altLabel "Imagery" ;
     skos:definition "Orthoimagery is geo-referenced rectified image data of the Earth's surface, from satellite or airborne sensors. Although technically not a theme in its own right, Orthoimagery is included as, when interpreted, it’s a widely-used data source for many other data themes." ;
@@ -107,7 +108,7 @@ cs:Orthoimagery
     skos:topConceptOf cs: ;
 .
 
-cs:PhysicalInfrastructure
+:PhysicalInfrastructure
     a skos:Concept ;
     skos:definition "The Physical Infrastructure theme includes industrial & utility facilities, and the service delivery facilities associated with administrative & social governmental services such as public administrations, utilities, transport, civil protection, schools and hospitals." ;
     skos:inScheme cs: ;
@@ -115,7 +116,7 @@ cs:PhysicalInfrastructure
     skos:topConceptOf cs: ;
 .
 
-cs:PopulationDistribution
+:PopulationDistribution
     a skos:Concept ;
     skos:definition "The Population Distribution theme covers the geographical distribution of people, including population characteristics." ;
     skos:inScheme cs: ;
@@ -123,7 +124,7 @@ cs:PopulationDistribution
     skos:topConceptOf cs: ;
 .
 
-cs:TransportNetworks
+:TransportNetworks
     a skos:Concept ;
     skos:altLabel "Transport" ;
     skos:definition "Transport Networks are the suite of road, rail, air, cable and water transport routes and their connectivity." ;
@@ -133,7 +134,7 @@ cs:TransportNetworks
     skos:topConceptOf cs: ;
 .
 
-cs:Water
+:Water
     a skos:Concept ;
     skos:definition "The Water theme covers the extent and conditions of all water features including rivers, lakes and marine features." ;
     skos:inScheme cs: ;
@@ -148,12 +149,6 @@ cs:Water
     schema:url "https://dblp.org/pers/y/Yaman:Beyza.html" ;
 .
 
-<https://www.adaptcentre.ie>
-    a schema:Organization ;
-    schema:name "ADAPT, the world-leading SFI Research Centre for AI-Driven Digital Content Technology" ;
-    schema:url "https://www.adaptcentre.ie"^^xsd:anyURI ;
-.
-
 cs:
     a skos:ConceptScheme ;
     dct:language "en"^^xsd:language ;
@@ -161,29 +156,29 @@ cs:
     vann:preferredNamespaceUri "https://linkeddataops.adaptcentre.ie/vocabularies/unggim-data-themes#" ;
     skos:definition "UN-GGIM Data Themes vocabulary describes a set of data themes for geospatial data based on the UN-GGIM document"@en ;
     skos:hasTopConcept
-        cs:Addresses ,
-        cs:Buildings-Settlements ,
-        cs:Elevation-Depth ,
-        cs:FunctionalAreas ,
-        cs:GCRF ,
-        cs:GeographicalNames ,
-        cs:Geology-Soils ,
-        cs:LandCover-LandUse ,
-        cs:LandParcels ,
-        cs:Orthoimagery ,
-        cs:PhysicalInfrastructure ,
-        cs:PopulationDistribution ,
-        cs:TransportNetworks ,
-        cs:Water ;
-    skos:historyNote """This vocabulary is a slightly reformatted version of the original obtainedfrom https://linkeddataops.adaptcentre.ie/vocabularies/unggim-data-themes.
+        :Addresses ,
+        :Buildings-Settlements ,
+        :Elevation-Depth ,
+        :FunctionalAreas ,
+        :GCRF ,
+        :GeographicalNames ,
+        :Geology-Soils ,
+        :LandCover-LandUse ,
+        :LandParcels ,
+        :Orthoimagery ,
+        :PhysicalInfrastructure ,
+        :PopulationDistribution ,
+        :TransportNetworks ,
+        :Water ;
+    skos:historyNote """This vocabulary is a slightly reformatted version of the original obtained from https://linkeddataops.adaptcentre.ie/vocabularies/unggim-data-themes.
 
-The only changes have been to remove the top-level 'Data Theme' Concept and to add ConceptScheme and Conceptelements required for the VocPub profile of SKOS (https://w3id.org/profile/vocpub/spec)""" ;
+The only changes have been to remove the top-level 'Data Theme' Concept and to add ConceptScheme and Concept elements required for the VocPub profile of SKOS (https://w3id.org/profile/vocpub/spec)""" ;
     skos:prefLabel "UN-GGIM Data Themes"@en ;
     foaf:homepage <https://linkeddataops.adaptcentre.ie/vocabularies/unggim-data-themes> ;
     schema:citation "https://linkeddataops.adaptcentre.ie/vocabularies/unggim-data-themes"^^xsd:anyURI ;
     schema:creator <https://orcid.org/0000-0003-2130-0312> ;
     schema:dateCreated "2020-10-26"^^xsd:date ;
-    schema:dateModified "2021-04-27"^^xsd:date ;
+    schema:dateModified "2024-08-15"^^xsd:date ;
     schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
-    schema:publisher <https://www.adaptcentre.ie> ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
 .

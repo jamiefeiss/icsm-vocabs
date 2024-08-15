@@ -1,8 +1,12 @@
 from rdflib import Graph, Literal, URIRef
 from rdflib.namespace import DC, DCTERMS, FOAF, RDF, SDO, SKOS, XSD
+from datetime import datetime
 
 # preprocess data-themes my moving all newline-broken strings to single-line strings
 g = Graph().parse("data-themes.orig.ttl")
+
+for t in g.triples((URIRef("http://osi.ie/prime2"), None, None)):
+    g.remove(t)
 
 # add VocPub metadata to the ConceptScheme
 CS = None
@@ -21,12 +25,14 @@ modified = g.value(CS, DCTERMS.modified)
 g.remove((CS, DCTERMS.modified, None))
 g.add((CS, SDO.dateCreated, modified))
 
-g.add((CS, SDO.dateModified, Literal("2021-04-27", datatype=XSD.date)))  # from the GitHub repo last commit
+g.add((CS, SDO.dateModified, Literal(datetime.now().isoformat().split("T")[0], datatype=XSD.date)))
+
+# g.add((CS, SDO.dateModified, Literal("2021-04-27", datatype=XSD.date)))  # from the GitHub repo last commit
 
 history_note = (
-        "This vocabulary is a slightly reformatted version of the original obtained" +
+        "This vocabulary is a slightly reformatted version of the original obtained " +
         "from https://linkeddataops.adaptcentre.ie/vocabularies/unggim-data-themes.\n\n" +
-        "The only changes have been to remove the top-level 'Data Theme' Concept and to add ConceptScheme and Concept"
+        "The only changes have been to remove the top-level 'Data Theme' Concept and to add ConceptScheme and Concept "
         "elements required for the VocPub profile of SKOS "
         "(https://w3id.org/profile/vocpub/spec)"
 )
@@ -64,13 +70,13 @@ g.parse(data=f"""
 PREFIX schema: <{SDO}>
 PREFIX xsd: <{XSD}>
 
-<https://www.adaptcentre.ie>
+<https://linked.data.gov.au/org/icsm>
     a schema:Organization ;
-    schema:name "ADAPT, the world-leading SFI Research Centre for AI-Driven Digital Content Technology" ;
-    schema:url "https://www.adaptcentre.ie"^^xsd:anyURI ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
 .
 
-<{CS}> schema:publisher <https://www.adaptcentre.ie> .
+<{CS}> schema:publisher <https://linked.data.gov.au/org/icsm> .
 """)
 
 
@@ -145,6 +151,23 @@ PREFIX skos: <{SKOS}>
 .
 """)
 
+# alter CS IRI
+NEW_CS = URIRef("https://linked.data.gov.au/def/unggim-themes")
+for t in g.triples((CS, None, None)):
+    g.remove(t)
+    g.add((NEW_CS, t[1], t[2]))
+for t in g.triples((None, None, CS)):
+    g.remove(t)
+    g.add((t[0], t[1], NEW_CS))
+g.bind("cs", NEW_CS)
 
-g.bind("cs", CS, override=True)
+g.bind("", CS, override=True)
 g.serialize(destination="../../unggim-themes.ttl", format="longturtle")
+
+# switch CS IRI
+ttl = open("../../unggim-themes.ttl").read()
+open("../../unggim-themes.ttl", "w").write(
+    ttl.replace("PREFIX : <https://linkeddataops.adaptcentre.ie/vocabularies/unggim-data-themes#>",
+                f"PREFIX : <{NEW_CS}/>")
+)
+
