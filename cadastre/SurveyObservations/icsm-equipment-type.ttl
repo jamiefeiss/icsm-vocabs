@@ -1,116 +1,239 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix sosa: <http://www.w3.org/ns/sosa/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/icsm-equipment-type/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/icsm-equipment-type>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type/base> a skos:Concept,
+:base
+    a
+        skos:Concept ,
         sosa:Sensor ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-equipment-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "base" ;
-    skos:prefLabel "GPPS Base" .
+    skos:prefLabel "GPPS Base" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type/camera> a skos:Concept,
+:camera
+    a
+        skos:Concept ,
         sosa:Sensor ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-equipment-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "camera" ;
-    skos:prefLabel "Camera" .
+    skos:prefLabel "Camera" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type/edm> a skos:Concept,
+:edm
+    a
+        skos:Concept ,
         sosa:Sensor ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-equipment-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "edm" ;
-    skos:prefLabel "EDM" .
+    skos:prefLabel "EDM" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type/gnss> a skos:Concept,
+:gnss
+    a
+        skos:Concept ,
         sosa:Sensor ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-equipment-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "gnss" ;
-    skos:prefLabel "GNSS (inc. GPS) System" .
+    skos:prefLabel "GNSS (inc. GPS) System" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type/ins> a skos:Concept,
+:ins
+    a
+        skos:Concept ,
         sosa:Sensor ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-equipment-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "ins" ;
-    skos:prefLabel "Inertial Navigation System" .
+    skos:prefLabel "Inertial Navigation System" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type/level> a skos:Concept,
+:level
+    a
+        skos:Concept ,
         sosa:Sensor ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-equipment-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "level" ;
-    skos:prefLabel "Level" .
+    skos:prefLabel "Level" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type/lidar> a skos:Concept,
+:lidar
+    a
+        skos:Concept ,
         sosa:Sensor ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-equipment-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "lidar" ;
-    skos:prefLabel "LiDAR" .
+    skos:prefLabel "LiDAR" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type/p> a skos:Concept,
+:p
+    a
+        skos:Concept ,
         sosa:Sensor ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-equipment-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "p" ;
-    skos:prefLabel "Prism" .
+    skos:prefLabel "Prism" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type/rover> a skos:Concept,
+:rover
+    a
+        skos:Concept ,
         sosa:Sensor ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-equipment-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "rover" ;
-    skos:prefLabel "GPS Rover" .
+    skos:prefLabel "GPS Rover" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type/software> a skos:Concept,
+:software
+    a
+        skos:Concept ,
         sosa:Sensor ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-equipment-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "software" ;
-    skos:prefLabel "Software" .
+    skos:prefLabel "Software" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type/t> a skos:Concept,
+:t
+    a
+        skos:Concept ,
         sosa:Sensor ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-equipment-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "t" ;
-    skos:prefLabel "Theodolite" .
+    skos:prefLabel "Theodolite" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type/t-band> a skos:Concept,
+:t-band
+    a
+        skos:Concept ,
         sosa:Sensor ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-equipment-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "t-band" ;
-    skos:prefLabel "Theodolite and Steel Band" .
+    skos:prefLabel "Theodolite and Steel Band" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type/t-edm> a skos:Concept,
+:t-edm
+    a
+        skos:Concept ,
         sosa:Sensor ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-equipment-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "t-edm" ;
-    skos:prefLabel "Theodolite and EDM" .
+    skos:prefLabel "Theodolite and EDM" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type/tape> a skos:Concept,
+:tape
+    a
+        skos:Concept ,
         sosa:Sensor ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-equipment-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "tape" ;
-    skos:prefLabel "Tape" .
+    skos:prefLabel "Tape" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type/ts> a skos:Concept,
+:ts
+    a
+        skos:Concept ,
         sosa:Sensor ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-equipment-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "ts" ;
-    skos:prefLabel "Total Station" .
+    skos:prefLabel "Total Station" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-equipment-type> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "ICSM Equipment Type"@en ;
+    skos:hasTopConcept
+        :base ,
+        :camera ,
+        :edm ,
+        :gnss ,
+        :ins ,
+        :level ,
+        :lidar ,
+        :p ,
+        :rover ,
+        :software ,
+        :t ,
+        :t-band ,
+        :t-edm ,
+        :tape ,
+        :ts ;
     skos:prefLabel "ICSM Equipment Type" ;
-    skos:scopeNote "sosa:Sensor" .
+    skos:scopeNote "sosa:Sensor" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:36.309717"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:36.234737"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/SurveyObservations/icsm-equipment-type.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/SurveyObservations/icsm-equipment-type.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

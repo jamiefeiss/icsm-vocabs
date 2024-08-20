@@ -1,96 +1,179 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix termtype: <https://linked.data.gov.au/def/csdm/termtypes/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/nz-parcel-purpose/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/nz-parcel-purpose>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX termtype: <https://linked.data.gov.au/def/csdm/termtypes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-purpose/cmca> a skos:Concept,
+:cmca
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "The marine and coastal area other than: (a) specified freehold land located in that area; and (b) any area that is owned by the Crown and has the status of any of the following kinds: (i) a conservation area within the meaning of section 2(1) of the Conservation Act 1987; (ii) a national park within the meaning of section 2 of the National Parks Act 1980; (iii) a reserve within the meaning of section 2(1) of the Reserves Act 1977; and (c) the bed of Te Whaanga Lagoon in the Chatham Islands (Marine and Coastal Area (Takutai Moana) Act 2011)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "cmca" ;
-    skos:prefLabel "Common Marine and Coastal Area" .
+    skos:prefLabel "Common Marine and Coastal Area" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-purpose/erosion> a skos:Concept,
+:erosion
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A primary parcel defining the portion of land that has been eroded from a parcel being extinguished." ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "erosion" ;
-    skos:prefLabel "Erosion" .
+    skos:prefLabel "Erosion" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-purpose/fst> a skos:Concept,
+:fst
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A primary parcel created for a Fee Simple title, including a parcel with a height limited/stratum boundary. This could include a SO Crown subdivision parcel, reclamation parcel or a parcel shown on a Legalisation CSD (other than a balance parcel)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "fst" ;
-    skos:prefLabel "Fee Simple Title" .
+    skos:prefLabel "Fee Simple Title" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-purpose/hydro> a skos:Concept,
+:hydro
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A Primary Parcel defining the residual or balance portion of the bed of a lake, river, stream or the sea. Includes land that has already become part of the common marine and coastal area pursuant to the Marine & Coastal Area Act 2011. Land that will become common marine and coastal area on subdivision pursuant to Sec 237A (1)(b) RM Act must have the parcel intent of Common Marine and Coastal Area." ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "hydro" ;
-    skos:prefLabel "Hydro" .
+    skos:prefLabel "Hydro" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-purpose/legalisation> a skos:Concept,
+:legalisation
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A primary parcel on a Legalisation CSD, including a parcel with a height-limited/stratum boundary, that is intended to be subject to a statutory action (including road to be stopped and land to be taken for road). For new parcels not directly subject to the proposed legalisation, but which are required under rule 39 (accounting for all of the land in existing primary parcels), the parcel intent should reflect its current status, for example Fee Simple Title for a fee simple parcel." ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "legalisation" ;
-    skos:prefLabel "Legalisation" .
+    skos:prefLabel "Legalisation" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-purpose/m-ori> a skos:Concept,
+:m-ori
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "Primary parcel created on a Māori Land CSD by an order from the Māori Land Court (MLC). (Includes Roadways if the MLC has declared the roadway to be a separate primary parcel similar in the nature of a Road)." ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "māori" ;
-    skos:prefLabel "Māori" .
+    skos:prefLabel "Māori" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-purpose/railway> a skos:Concept,
+:railway
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A primary parcel which is to remain railway (for example when creating a balance railway parcel)." ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "railway" ;
-    skos:prefLabel "Railway" .
+    skos:prefLabel "Railway" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-purpose/residual> a skos:Concept,
+:residual
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A parcel that is the residual portion of a primary parcel remaining as a result of a survey: i. for removal of limitations as to parcels, or ii. for an adverse possession claim, or iii. to change the registration of land from the Deeds Registration Act 1908 to the Land Transfer Act 2017." ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "residual" ;
-    skos:prefLabel "Residual Parcel" .
+    skos:prefLabel "Residual Parcel" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-purpose/road> a skos:Concept,
+:road
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A primary parcel which is to remain legal road (for example when creating a balance road parcel)." ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "road" ;
-    skos:prefLabel "Road" .
+    skos:prefLabel "Road" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-purpose/vest> a skos:Concept,
+:vest
+    a
+        skos:Concept ,
         termtype:ParcelPurpose ;
     skos:definition "A primary parcel vested on Deposit. Vested parcels include accessways, Government Purpose Reserves, historic reserves (Crown or Territorial Authority), Local Purpose Reserve, Nature Reserve (Crown or Territorial Authority), Recreation Reserve (Crown or Territorial Authority), Road, Scenic Reserve (Crown or Territorial Authority), Scientific Reserve (Crown or Territorial Authority), Service Lane, in Lieu of a Reserve (Crown or Territorial Authority), in the Crown under sec. 239(1)(c) of the Resource Management Act 1991 or the territorial Authority under sec. 237A(1)(a) of the Resource management Act 1991." ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-parcel-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "vest" ;
-    skos:prefLabel "Vesting on deposit" .
+    skos:prefLabel "Vesting on deposit" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-parcel-purpose> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "NZ Parcel Purpose"@en ;
+    skos:hasTopConcept
+        :cmca ,
+        :erosion ,
+        :fst ,
+        :hydro ,
+        :legalisation ,
+        :m-ori ,
+        :railway ,
+        :residual ,
+        :road ,
+        :vest ;
     skos:prefLabel "NZ Parcel Purpose" ;
-    skos:scopeNote "termtype:ParcelPurpose" .
+    skos:scopeNote "termtype:ParcelPurpose" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:35.023611"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:34.951797"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/nz-parcel-purpose.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/nz-parcel-purpose.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

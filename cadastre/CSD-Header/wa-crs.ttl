@@ -1,472 +1,785 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix termtype: <https://linked.data.gov.au/def/csdm/termtypes/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <http://www.opengis.net/def/crs/EPSG/0/>
+PREFIX cs: <http://www.opengis.net/def/crs/EPSG/0>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX termtype: <https://linked.data.gov.au/def/csdm/termtypes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://www.opengis.net/def/crs/EPSG/0/10448> a skos:Concept,
+:10448
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "ALB94" ;
     skos:definition "Projected GDA94 / Albany Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10448" ;
-    skos:prefLabel "GDA94 / ALB94" .
+    skos:prefLabel "GDA94 / ALB94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10449> a skos:Concept,
+:10449
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "BIO94" ;
     skos:definition "Projected GDA94 / Barrow Island and Onslow Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10449" ;
-    skos:prefLabel "GDA94 / BIO94" .
+    skos:prefLabel "GDA94 / BIO94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10450> a skos:Concept,
+:10450
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "BRO94" ;
     skos:definition "Projected GDA94 / Broome Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10450" ;
-    skos:prefLabel "GDA94 / BRO94" .
+    skos:prefLabel "GDA94 / BRO94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10451> a skos:Concept,
+:10451
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "BCG94" ;
     skos:definition "Projected GDA94 / Busselton Coastal Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10451" ;
-    skos:prefLabel "GDA94 / BCG94" .
+    skos:prefLabel "GDA94 / BCG94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10452> a skos:Concept,
+:10452
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "CARN94" ;
     skos:definition "Projected GDA94 / Carnarvon Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10452" ;
-    skos:prefLabel "GDA94 / CARN94" .
+    skos:prefLabel "GDA94 / CARN94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10453> a skos:Concept,
+:10453
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "COL94" ;
     skos:definition "Projected GDA94 / Collie Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10453" ;
-    skos:prefLabel "GDA94 / COL94" .
+    skos:prefLabel "GDA94 / COL94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10454> a skos:Concept,
+:10454
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "ESP94" ;
     skos:definition "Projected GDA94 / Esperance Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10454" ;
-    skos:prefLabel "GDA94 / ESP94" .
+    skos:prefLabel "GDA94 / ESP94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10455> a skos:Concept,
+:10455
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "EXM94" ;
     skos:definition "Projected GDA94 / Exmouth Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10455" ;
-    skos:prefLabel "GDA94 / EXM94" .
+    skos:prefLabel "GDA94 / EXM94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10456> a skos:Concept,
+:10456
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "GCG94" ;
     skos:definition "Projected GDA94 / Geraldton Coastal Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10456" ;
-    skos:prefLabel "GDA94 / GCG94" .
+    skos:prefLabel "GDA94 / GCG94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10457> a skos:Concept,
+:10457
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "GOLD94" ;
     skos:definition "Projected GDA94 / Goldfields Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10457" ;
-    skos:prefLabel "GDA94 / GOLD94" .
+    skos:prefLabel "GDA94 / GOLD94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10458> a skos:Concept,
+:10458
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "JCG94" ;
     skos:definition "Projected GDA94 / Jurien Coastal Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10458" ;
-    skos:prefLabel "GDA94 / JCG94" .
+    skos:prefLabel "GDA94 / JCG94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10459> a skos:Concept,
+:10459
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "KALB94" ;
     skos:definition "Projected GDA94 / Kalbarri Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10459" ;
-    skos:prefLabel "GDA94 / KALB94" .
+    skos:prefLabel "GDA94 / KALB94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10460> a skos:Concept,
+:10460
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "KAR94" ;
     skos:definition "Projected GDA94 / Karratha Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10460" ;
-    skos:prefLabel "GDA94 / KAR94" .
+    skos:prefLabel "GDA94 / KAR94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10461> a skos:Concept,
+:10461
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "KUN94" ;
     skos:definition "Projected GDA94 / Kununurra Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10461" ;
-    skos:prefLabel "GDA94 / KUN94" .
+    skos:prefLabel "GDA94 / KUN94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10462> a skos:Concept,
+:10462
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "LCG94" ;
     skos:definition "Projected GDA94 / Lancelin Coastal Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10462" ;
-    skos:prefLabel "GDA94 / LCG94" .
+    skos:prefLabel "GDA94 / LCG94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10463> a skos:Concept,
+:10463
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "MRCG94" ;
     skos:definition "Projected GDA94 / Margaret River Coastal Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10463" ;
-    skos:prefLabel "GDA94 / MRCG94" .
+    skos:prefLabel "GDA94 / MRCG94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10464> a skos:Concept,
+:10464
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "PCG94" ;
     skos:definition "Projected GDA94 / Perth Coastal Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10464" ;
-    skos:prefLabel "GDA94 / PCG94" .
+    skos:prefLabel "GDA94 / PCG94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/10465> a skos:Concept,
+:10465
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "PHG94" ;
     skos:definition "Projected GDA95 / Port Hedland Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "10465" ;
-    skos:prefLabel "GDA94 / PHG94" .
+    skos:prefLabel "GDA94 / PHG94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/28348> a skos:Concept,
+:28348
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "48, MGA" ;
     skos:definition "Projected projected GDA94 / MGA zone 48" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "28348" ;
-    skos:prefLabel "GDA94 / MGA zone 48" .
+    skos:prefLabel "GDA94 / MGA zone 48" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/28349> a skos:Concept,
+:28349
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "49, MGA" ;
     skos:definition "Projected projected GDA94 / MGA zone 49" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "28349" ;
-    skos:prefLabel "GDA94 / MGA zone 49" .
+    skos:prefLabel "GDA94 / MGA zone 49" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/28350> a skos:Concept,
+:28350
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "50, MGA" ;
     skos:definition "Projected projected GDA94 / MGA zone 50" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "28350" ;
-    skos:prefLabel "GDA94 / MGA zone 50" .
+    skos:prefLabel "GDA94 / MGA zone 50" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/28351> a skos:Concept,
+:28351
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "51, MGA" ;
     skos:definition "Projected projected GDA94 / MGA zone 51" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "28351" ;
-    skos:prefLabel "GDA94 / MGA zone 51" .
+    skos:prefLabel "GDA94 / MGA zone 51" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/28352> a skos:Concept,
+:28352
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "52, MGA" ;
     skos:definition "Projected projected GDA94 / MGA zone 52" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "28352" ;
-    skos:prefLabel "GDA94 / MGA zone 52" .
+    skos:prefLabel "GDA94 / MGA zone 52" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/4283> a skos:Concept,
+:4283
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:definition "Geodetic Geographic 2D" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "4283" ;
-    skos:prefLabel "GDA94" .
+    skos:prefLabel "GDA94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/6721> a skos:Concept,
+:6721
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "CIG94" ;
     skos:definition "Projected GDA94 / Christmas Island Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "6721" ;
-    skos:prefLabel "GDA94 / CIG94" .
+    skos:prefLabel "GDA94 / CIG94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/6723> a skos:Concept,
+:6723
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "CKIG94" ;
     skos:definition "Projected GDA94 / Cocos (Keeling) Islands Grid 1994" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "6723" ;
-    skos:prefLabel "GDA94 / CKIG94" .
+    skos:prefLabel "GDA94 / CKIG94" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/6736> a skos:Concept,
+:6736
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "46, MGA" ;
     skos:definition "Projected projected GDA94 / MGA zone 46" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "6736" ;
-    skos:prefLabel "GDA94 / MGA zone 46" .
+    skos:prefLabel "GDA94 / MGA zone 46" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/6737> a skos:Concept,
+:6737
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "47, MGA" ;
     skos:definition "Projected projected GDA94 / MGA zone 47" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "6737" ;
-    skos:prefLabel "GDA94 / MGA zone 47" .
+    skos:prefLabel "GDA94 / MGA zone 47" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/7844> a skos:Concept,
+:7844
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:definition "Geodetic Geographic 2D" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "7844" ;
-    skos:prefLabel "GDA2020" .
+    skos:prefLabel "GDA2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/7846> a skos:Concept,
+:7846
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "46, MGA2020" ;
     skos:definition "Projected GDA2020 / MGA zone 46" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "7846" ;
-    skos:prefLabel "GDA2020 / MGA zone 46" .
+    skos:prefLabel "GDA2020 / MGA zone 46" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/7847> a skos:Concept,
+:7847
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "47, MGA2020" ;
     skos:definition "Projected GDA2020 / MGA zone 47" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "7847" ;
-    skos:prefLabel "GDA2020 / MGA zone 47" .
+    skos:prefLabel "GDA2020 / MGA zone 47" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/7848> a skos:Concept,
+:7848
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "48, MGA2020" ;
     skos:definition "Projected GDA2020 / MGA zone 48" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "7848" ;
-    skos:prefLabel "GDA2020 / MGA zone 48" .
+    skos:prefLabel "GDA2020 / MGA zone 48" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/7849> a skos:Concept,
+:7849
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "49, MGA2020" ;
     skos:definition "Projected GDA2020 / MGA zone 49" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "7849" ;
-    skos:prefLabel "GDA2020 / MGA zone 49" .
+    skos:prefLabel "GDA2020 / MGA zone 49" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/7850> a skos:Concept,
+:7850
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "50, MGA2020" ;
     skos:definition "Projected GDA2020 / MGA zone 50" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "7850" ;
-    skos:prefLabel "GDA2020 / MGA zone 50" .
+    skos:prefLabel "GDA2020 / MGA zone 50" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/7851> a skos:Concept,
+:7851
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "51, MGA2020" ;
     skos:definition "Projected GDA2020 / MGA zone 51" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "7851" ;
-    skos:prefLabel "GDA2020 / MGA zone 51" .
+    skos:prefLabel "GDA2020 / MGA zone 51" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/7852> a skos:Concept,
+:7852
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "52, MGA2020" ;
     skos:definition "Projected GDA2020 / MGA zone 52" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "7852" ;
-    skos:prefLabel "GDA2020 / MGA zone 52" .
+    skos:prefLabel "GDA2020 / MGA zone 52" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8013> a skos:Concept,
+:8013
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "ALB2020" ;
     skos:definition "Projected GDA2020 / Albany Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8013" ;
-    skos:prefLabel "GDA2020 / ALB2020" .
+    skos:prefLabel "GDA2020 / ALB2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8014> a skos:Concept,
+:8014
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "BIO2020" ;
     skos:definition "Projected GDA2020 / Barrow Island and Onslow Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8014" ;
-    skos:prefLabel "GDA2020 / BIO2020" .
+    skos:prefLabel "GDA2020 / BIO2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8015> a skos:Concept,
+:8015
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "BRO2020" ;
     skos:definition "Projected GDA2020 / Broome Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8015" ;
-    skos:prefLabel "GDA2020 / BRO2020" .
+    skos:prefLabel "GDA2020 / BRO2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8016> a skos:Concept,
+:8016
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "BCG2020" ;
     skos:definition "Projected GDA2020 / Busselton Coastal Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8016" ;
-    skos:prefLabel "GDA2020 / BCG2020" .
+    skos:prefLabel "GDA2020 / BCG2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8017> a skos:Concept,
+:8017
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "CARN2020" ;
     skos:definition "Projected GDA2020 / Carnarvon Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8017" ;
-    skos:prefLabel "GDA2020 / CARN2020" .
+    skos:prefLabel "GDA2020 / CARN2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8018> a skos:Concept,
+:8018
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "CIG2020" ;
     skos:definition "Projected GDA2020 / Christmas Island Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8018" ;
-    skos:prefLabel "GDA2020 / CIG2020" .
+    skos:prefLabel "GDA2020 / CIG2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8019> a skos:Concept,
+:8019
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "CKIG2020" ;
     skos:definition "Projected GDA2020 / Cocos (Keeling) Islands Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8019" ;
-    skos:prefLabel "GDA2020 / CKIG2020" .
+    skos:prefLabel "GDA2020 / CKIG2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8020> a skos:Concept,
+:8020
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "COL2020" ;
     skos:definition "Projected GDA2020 / Collie Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8020" ;
-    skos:prefLabel "GDA2020 / COL2020" .
+    skos:prefLabel "GDA2020 / COL2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8021> a skos:Concept,
+:8021
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "ESP2020" ;
     skos:definition "Projected GDA2020 / Esperance Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8021" ;
-    skos:prefLabel "GDA2020 / ESP2020" .
+    skos:prefLabel "GDA2020 / ESP2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8022> a skos:Concept,
+:8022
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "EXM2020" ;
     skos:definition "Projected GDA2020 / Exmouth Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8022" ;
-    skos:prefLabel "GDA2020 / EXM2020" .
+    skos:prefLabel "GDA2020 / EXM2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8023> a skos:Concept,
+:8023
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "GCG2020" ;
     skos:definition "Projected GDA2020 / Geraldton Coastal Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8023" ;
-    skos:prefLabel "GDA2020 / GCG2020" .
+    skos:prefLabel "GDA2020 / GCG2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8024> a skos:Concept,
+:8024
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "GOLD2020" ;
     skos:definition "Projected GDA2020 / Goldfields Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8024" ;
-    skos:prefLabel "GDA2020 / GOLD2020" .
+    skos:prefLabel "GDA2020 / GOLD2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8025> a skos:Concept,
+:8025
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "JCG2020" ;
     skos:definition "Projected GDA2020 / Jurien Coastal Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8025" ;
-    skos:prefLabel "GDA2020 / JCG2020" .
+    skos:prefLabel "GDA2020 / JCG2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8026> a skos:Concept,
+:8026
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "KALB2020" ;
     skos:definition "Projected GDA2020 / Kalbarri Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8026" ;
-    skos:prefLabel "GDA2020 / KALB2020" .
+    skos:prefLabel "GDA2020 / KALB2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8027> a skos:Concept,
+:8027
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "KAR2020" ;
     skos:definition "Projected GDA2020 / Karratha Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8027" ;
-    skos:prefLabel "GDA2020 / KAR2020" .
+    skos:prefLabel "GDA2020 / KAR2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8028> a skos:Concept,
+:8028
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "KUN2020" ;
     skos:definition "Projected GDA2020 / Kununurra Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8028" ;
-    skos:prefLabel "GDA2020 / KUN2020" .
+    skos:prefLabel "GDA2020 / KUN2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8029> a skos:Concept,
+:8029
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "LCG2020" ;
     skos:definition "Projected GDA2020 / Lancelin Coastal Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8029" ;
-    skos:prefLabel "GDA2020 / LCG2020" .
+    skos:prefLabel "GDA2020 / LCG2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8030> a skos:Concept,
+:8030
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "MRCG2020" ;
     skos:definition "Projected GDA2020 / Margaret River Coastal Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8030" ;
-    skos:prefLabel "GDA2020 / MRCG2020" .
+    skos:prefLabel "GDA2020 / MRCG2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8031> a skos:Concept,
+:8031
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "PCG2020" ;
     skos:definition "Projected GDA2020 / Perth Coastal Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8031" ;
-    skos:prefLabel "GDA2020 / PCG2020" .
+    skos:prefLabel "GDA2020 / PCG2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0/8032> a skos:Concept,
+:8032
+    a
+        skos:Concept ,
         termtype:AllowableCoordinateReferenceSystem ;
     skos:altLabel "PHG2020" ;
     skos:definition "Projected GDA2020 / Port Hedland Grid 2020" ;
-    skos:inScheme <http://www.opengis.net/def/crs/EPSG/0> ;
+    skos:inScheme cs: ;
     skos:notation "8032" ;
-    skos:prefLabel "GDA2020 / PHG2020" .
+    skos:prefLabel "GDA2020 / PHG2020" ;
+    skos:topConceptOf cs: ;
+.
 
-<http://www.opengis.net/def/crs/EPSG/0> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "WA Coordinate Reference Systems"@en ;
+    skos:hasTopConcept
+        :10448 ,
+        :10449 ,
+        :10450 ,
+        :10451 ,
+        :10452 ,
+        :10453 ,
+        :10454 ,
+        :10455 ,
+        :10456 ,
+        :10457 ,
+        :10458 ,
+        :10459 ,
+        :10460 ,
+        :10461 ,
+        :10462 ,
+        :10463 ,
+        :10464 ,
+        :10465 ,
+        :28348 ,
+        :28349 ,
+        :28350 ,
+        :28351 ,
+        :28352 ,
+        :4283 ,
+        :6721 ,
+        :6723 ,
+        :6736 ,
+        :6737 ,
+        :7844 ,
+        :7846 ,
+        :7847 ,
+        :7848 ,
+        :7849 ,
+        :7850 ,
+        :7851 ,
+        :7852 ,
+        :8013 ,
+        :8014 ,
+        :8015 ,
+        :8016 ,
+        :8017 ,
+        :8018 ,
+        :8019 ,
+        :8020 ,
+        :8021 ,
+        :8022 ,
+        :8023 ,
+        :8024 ,
+        :8025 ,
+        :8026 ,
+        :8027 ,
+        :8028 ,
+        :8029 ,
+        :8030 ,
+        :8031 ,
+        :8032 ;
     skos:prefLabel "WA Coordinate Reference Systems" ;
-    skos:scopeNote "termtype:AllowableCoordinateReferenceSystem" .
+    skos:scopeNote "termtype:AllowableCoordinateReferenceSystem" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:47.070301"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:46.862268"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/CSD-Header/wa-crs.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/CSD-Header/wa-crs.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

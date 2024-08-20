@@ -1,68 +1,131 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix termtype: <https://linked.data.gov.au/def/csdm/termtypes/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/vic-parcel-state/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/vic-parcel-state>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX termtype: <https://linked.data.gov.au/def/csdm/termtypes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/vic-parcel-state/affected> a skos:Concept,
+:affected
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "An existing parcel subject to amendment due to new boundary adoption from an abutting parcel" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "affected" ;
-    skos:prefLabel "Affected" .
+    skos:prefLabel "Affected" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-parcel-state/cancelled> a skos:Concept,
+:cancelled
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "An existing parcel subject to cancellation" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "cancelled" ;
-    skos:prefLabel "Cancelled" .
+    skos:prefLabel "Cancelled" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-parcel-state/created> a skos:Concept,
+:created
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "A new parcel being created in a plan (e.g. (PS) plan of subdivision; (OP) original plan" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "created" ;
-    skos:prefLabel "Created" .
+    skos:prefLabel "Created" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-parcel-state/encroached> a skos:Concept,
+:encroached
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "An existing parcel encroached by a new boundary adoption from an abutting parcel" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "encroached" ;
-    skos:prefLabel "Encroached" .
+    skos:prefLabel "Encroached" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-parcel-state/existing> a skos:Concept,
+:existing
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "A parcel that exists on the cadastre and the boundaries are not affected" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "existing" ;
-    skos:prefLabel "Existing" .
+    skos:prefLabel "Existing" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-parcel-state/removed> a skos:Concept,
+:removed
+    a
+        skos:Concept ,
         termtype:ParcelState ;
     skos:definition "An easement / restriction subject to removal" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-parcel-state> ;
+    skos:inScheme cs: ;
     skos:notation "removed" ;
-    skos:prefLabel "Removed" .
+    skos:prefLabel "Removed" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-parcel-state> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "VIC Parcel State"@en ;
+    skos:hasTopConcept
+        :affected ,
+        :cancelled ,
+        :created ,
+        :encroached ,
+        :existing ,
+        :removed ;
     skos:prefLabel "VIC Parcel State" ;
-    skos:scopeNote "termtype:ParcelState" .
+    skos:scopeNote "termtype:ParcelState" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:34.949529"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:34.881056"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/vic-parcel-state.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/Parcels/vic-parcel-state.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

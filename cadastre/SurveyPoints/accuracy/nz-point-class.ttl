@@ -1,113 +1,215 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix termtype: <https://linked.data.gov.au/def/csdm/termtypes/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/nz-point-class/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/nz-point-class>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX termtype: <https://linked.data.gov.au/def/csdm/termtypes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/nz-point-class/0> a skos:Concept,
+:0
+    a
+        skos:Concept ,
         termtype:PointQualityClass ;
     skos:definition "National reference frame" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-point-class> ;
+    skos:inScheme cs: ;
     skos:notation "0" ;
-    skos:prefLabel "0" .
+    skos:prefLabel "0" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-point-class/1> a skos:Concept,
+:1
+    a
+        skos:Concept ,
         termtype:PointQualityClass ;
     skos:definition "National deformation monitoring" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-point-class> ;
+    skos:inScheme cs: ;
     skos:notation "1" ;
-    skos:prefLabel "1" .
+    skos:prefLabel "1" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-point-class/10> a skos:Concept,
+:10
+    a
+        skos:Concept ,
         termtype:PointQualityClass ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-point-class> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "10" ;
-    skos:prefLabel "10" .
+    skos:prefLabel "10" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-point-class/11> a skos:Concept,
+:11
+    a
+        skos:Concept ,
         termtype:PointQualityClass ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-point-class> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "11" ;
-    skos:prefLabel "11" .
+    skos:prefLabel "11" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-point-class/12> a skos:Concept,
+:12
+    a
+        skos:Concept ,
         termtype:PointQualityClass ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-point-class> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "12" ;
-    skos:prefLabel "12" .
+    skos:prefLabel "12" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-point-class/2> a skos:Concept,
+:2
+    a
+        skos:Concept ,
         termtype:PointQualityClass ;
     skos:definition "Regional deformation monitoring" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-point-class> ;
+    skos:inScheme cs: ;
     skos:notation "2" ;
-    skos:prefLabel "2" .
+    skos:prefLabel "2" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-point-class/3> a skos:Concept,
+:3
+    a
+        skos:Concept ,
         termtype:PointQualityClass ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-point-class> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "3" ;
-    skos:prefLabel "3" .
+    skos:prefLabel "3" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-point-class/4> a skos:Concept,
+:4
+    a
+        skos:Concept ,
         termtype:PointQualityClass ;
     skos:definition "Local deformation monitoring" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-point-class> ;
+    skos:inScheme cs: ;
     skos:notation "4" ;
-    skos:prefLabel "4" .
+    skos:prefLabel "4" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-point-class/5> a skos:Concept,
+:5
+    a
+        skos:Concept ,
         termtype:PointQualityClass ;
     skos:definition "Cadastral horizontal control. Basic geospatial network" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-point-class> ;
+    skos:inScheme cs: ;
     skos:notation "5" ;
-    skos:prefLabel "5" .
+    skos:prefLabel "5" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-point-class/6> a skos:Concept,
+:6
+    a
+        skos:Concept ,
         termtype:PointQualityClass ;
     skos:definition "Cadastral permanent reference marks. Cadastral witness marks" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-point-class> ;
+    skos:inScheme cs: ;
     skos:notation "6" ;
-    skos:prefLabel "6" .
+    skos:prefLabel "6" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-point-class/7> a skos:Concept,
+:7
+    a
+        skos:Concept ,
         termtype:PointQualityClass ;
     skos:definition "Class A boundary marks" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-point-class> ;
+    skos:inScheme cs: ;
     skos:notation "7" ;
-    skos:prefLabel "7" .
+    skos:prefLabel "7" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-point-class/8> a skos:Concept,
+:8
+    a
+        skos:Concept ,
         termtype:PointQualityClass ;
     skos:definition "Class B boundary marks" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-point-class> ;
+    skos:inScheme cs: ;
     skos:notation "8" ;
-    skos:prefLabel "8" .
+    skos:prefLabel "8" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-point-class/9> a skos:Concept,
+:9
+    a
+        skos:Concept ,
         termtype:PointQualityClass ;
     skos:definition "Class C boundary marks" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-point-class> ;
+    skos:inScheme cs: ;
     skos:notation "9" ;
-    skos:prefLabel "9" .
+    skos:prefLabel "9" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-point-class> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "NZ Point Quality Classes"@en ;
+    skos:hasTopConcept
+        :0 ,
+        :1 ,
+        :10 ,
+        :11 ,
+        :12 ,
+        :2 ,
+        :3 ,
+        :4 ,
+        :5 ,
+        :6 ,
+        :7 ,
+        :8 ,
+        :9 ;
     skos:prefLabel "NZ Point Quality Classes" ;
-    skos:scopeNote "termtype:PointQualityClass" .
+    skos:scopeNote "termtype:PointQualityClass" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:44.799651"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:44.725494"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/SurveyPoints/accuracy/nz-point-class.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/SurveyPoints/accuracy/nz-point-class.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

@@ -1,151 +1,299 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/bacc> a skos:Concept,
+:bacc
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "bacc" ;
-    skos:prefLabel "Boundary Accepted" .
+    skos:prefLabel "Boundary Accepted" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/bnda> a skos:Concept,
+:bnda
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "bnda" ;
-    skos:prefLabel "Boundary Defined by Adoption" .
+    skos:prefLabel "Boundary Defined by Adoption" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/bnds> a skos:Concept,
+:bnds
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "bnds" ;
-    skos:prefLabel "Boundary Defined by Survey" .
+    skos:prefLabel "Boundary Defined by Survey" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/bndy> a skos:Concept,
+:bndy
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
     skos:definition "The mark was used as a boundary mark" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "bndy" ;
-    skos:prefLabel "Boundary" .
+    skos:prefLabel "Boundary" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/bnnd> a skos:Concept,
+:bnnd
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "bnnd" ;
-    skos:prefLabel "Boundary Not Defined" .
+    skos:prefLabel "Boundary Not Defined" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/csnm-vcm> a skos:Concept,
+:csnm-vcm
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
     skos:definition "A mark that is used as either a cadastral survey network mark or vertical control mark" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "csnm-vcm" ;
-    skos:prefLabel "CSNM/VCM" .
+    skos:prefLabel "CSNM/VCM" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/natb> a skos:Concept,
+:natb
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "natb" ;
-    skos:prefLabel "Natural Boundary Node" .
+    skos:prefLabel "Natural Boundary Node" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/non-bdy> a skos:Concept,
+:non-bdy
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
     skos:definition "The mark was used as a non-boundary mark" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "non-bdy" ;
-    skos:prefLabel "Non Boundary" .
+    skos:prefLabel "Non Boundary" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/occupation> a skos:Concept,
+:occupation
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "occupation" ;
-    skos:prefLabel "Occupation Observation" .
+    skos:prefLabel "Occupation Observation" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/orbd> a skos:Concept,
+:orbd
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "orbd" ;
-    skos:prefLabel "Origin/Boundary" .
+    skos:prefLabel "Origin/Boundary" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/orig> a skos:Concept,
+:orig
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "orig" ;
-    skos:prefLabel "Origin" .
+    skos:prefLabel "Origin" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/orwb> a skos:Concept,
+:orwb
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "orwb" ;
-    skos:prefLabel "Origin/Witness/Boundary" .
+    skos:prefLabel "Origin/Witness/Boundary" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/orwi> a skos:Concept,
+:orwi
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "orwi" ;
-    skos:prefLabel "Origin/Witness" .
+    skos:prefLabel "Origin/Witness" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/prbd> a skos:Concept,
+:prbd
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
     skos:definition "The mark was used as a PRM and as a boundary mark" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "prbd" ;
-    skos:prefLabel "PRM/Boundary" .
+    skos:prefLabel "PRM/Boundary" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/prm> a skos:Concept,
+:prm
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
     skos:definition "The mark is used as a permanent reference mark" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:inScheme cs: ;
     skos:notation "prm" ;
-    skos:prefLabel "Permanent Reference Mark" .
+    skos:prefLabel "Permanent Reference Mark" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/wibd> a skos:Concept,
+:wibd
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "wibd" ;
-    skos:prefLabel "Witness/Boundary" .
+    skos:prefLabel "Witness/Boundary" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/witn> a skos:Concept,
+:witn
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "witn" ;
-    skos:prefLabel "Witness" .
+    skos:prefLabel "Witness" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/xbds> a skos:Concept,
+:xbds
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "xbds" ;
-    skos:prefLabel "BNDS not requiring witnessing - created on the fly in caj_adjust_node table only" .
+    skos:prefLabel "BNDS not requiring witnessing - created on the fly in caj_adjust_node table only" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/xprb> a skos:Concept,
+:xprb
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "xprb" ;
-    skos:prefLabel "PRBD not requiring witnessing - created on the fly in caj_adjust_node table only" .
+    skos:prefLabel "PRBD not requiring witnessing - created on the fly in caj_adjust_node table only" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose/xwib> a skos:Concept,
+:xwib
+    a
+        skos:Concept ,
         surv:SurveyPointPurpose ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "xwib" ;
-    skos:prefLabel "WIBD not requiring witnessing - created on the fly in caj_adjust_node table only" .
+    skos:prefLabel "WIBD not requiring witnessing - created on the fly in caj_adjust_node table only" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-surveypoint-purpose> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "NZ Survey Point Purpose"@en ;
+    skos:hasTopConcept
+        :bacc ,
+        :bnda ,
+        :bnds ,
+        :bndy ,
+        :bnnd ,
+        :csnm-vcm ,
+        :natb ,
+        :non-bdy ,
+        :occupation ,
+        :orbd ,
+        :orig ,
+        :orwb ,
+        :orwi ,
+        :prbd ,
+        :prm ,
+        :wibd ,
+        :witn ,
+        :xbds ,
+        :xprb ,
+        :xwib ;
     skos:prefLabel "NZ Survey Point Purpose" ;
-    skos:scopeNote "surv:SurveyPointPurpose" .
+    skos:scopeNote "surv:SurveyPointPurpose" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:34.008800"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:33.929082"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/SurveyPoints/purpose/nz-purpose.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/SurveyPoints/purpose/nz-purpose.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

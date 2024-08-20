@@ -1,586 +1,1022 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix termtype: <https://linked.data.gov.au/def/csdm/termtypes/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/nz-territorial-authority/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/nz-territorial-authority>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX termtype: <https://linked.data.gov.au/def/csdm/termtypes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/001> a skos:Concept,
+:001
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Northland Region) Reorganisation Order 1989, Gazette 1989, p 2391" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "001" ;
-    skos:prefLabel "Far North District" .
+    skos:prefLabel "Far North District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/002> a skos:Concept,
+:002
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Northland Region) Reorganisation Order 1989, Gazette 1989, p 2391" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "002" ;
-    skos:prefLabel "Whangarei District" .
+    skos:prefLabel "Whangarei District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/003> a skos:Concept,
+:003
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Northland Region) Reorganisation Order 1989, Gazette 1989, p 2391" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "003" ;
-    skos:prefLabel "Kaipara District" .
+    skos:prefLabel "Kaipara District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/011> a skos:Concept,
+:011
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Waikato Region) Reorganisation Order 1989, Gazette 1989, p 2460" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "011" ;
-    skos:prefLabel "Thames-Coromandel District" .
+    skos:prefLabel "Thames-Coromandel District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/012> a skos:Concept,
+:012
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Waikato Region) Reorganisation Order 1989, Gazette 1989, p 2460" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "012" ;
-    skos:prefLabel "Hauraki District" .
+    skos:prefLabel "Hauraki District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/013> a skos:Concept,
+:013
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Waikato Region) Reorganisation Order 1989, Gazette 1989, p 2460" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "013" ;
-    skos:prefLabel "Waikato District" .
+    skos:prefLabel "Waikato District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/015> a skos:Concept,
+:015
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Waikato Region) Reorganisation Order 1989, Gazette 1989, p 2460" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "015" ;
-    skos:prefLabel "Matamata-Piako District" .
+    skos:prefLabel "Matamata-Piako District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/016> a skos:Concept,
+:016
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by Local Government (Waikato Region) Reorganisation Order 1989, Gazette 1989, p 2460" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "016" ;
-    skos:prefLabel "Hamilton City" .
+    skos:prefLabel "Hamilton City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/017> a skos:Concept,
+:017
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Waikato Region) Reorganisation Order 1989, Gazette 1989, p 2460" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "017" ;
-    skos:prefLabel "Waipa District" .
+    skos:prefLabel "Waipa District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/018> a skos:Concept,
+:018
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:altLabel "Otorohanga District" ;
     skos:definition "A district council constituted by Local Government (Waikato Region) Reorganisation Order 1989, Gazette 1989, p 2460 and amended by clause 3 of the Local Government (Ōtorohanga District Council) Order 2019 (LI 2019/330)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "018" ;
-    skos:prefLabel "Ōtorohanga District" .
+    skos:prefLabel "Ōtorohanga District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/019> a skos:Concept,
+:019
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Waikato Region) Reorganisation Order 1989, Gazette 1989, p 2460" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "019" ;
-    skos:prefLabel "South Waikato District" .
+    skos:prefLabel "South Waikato District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/020> a skos:Concept,
+:020
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Waikato Region) Reorganisation Order 1989, Gazette 1989, p 2460" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "020" ;
-    skos:prefLabel "Waitomo District" .
+    skos:prefLabel "Waitomo District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/021> a skos:Concept,
+:021
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Waikato Region) Reorganisation Order 1989, Gazette 1989, p 2460" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "021" ;
-    skos:prefLabel "Taupo District" .
+    skos:prefLabel "Taupo District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/022> a skos:Concept,
+:022
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Bay of Plenty Region) Reorganisation Order 1989, Gazette 1989, p 2275" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "022" ;
-    skos:prefLabel "Western Bay of Plenty District" .
+    skos:prefLabel "Western Bay of Plenty District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/023> a skos:Concept,
+:023
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by Local Government (Bay of Plenty Region) Reorganisation Order 1989, Gazette 1989, p 2275 and amended by clause 5 of the Local Government (Tauranga City Council) Order 2003 (SR 2003/275)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "023" ;
-    skos:prefLabel "Tauranga City" .
+    skos:prefLabel "Tauranga City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/024> a skos:Concept,
+:024
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Bay of Plenty Region) Reorganisation Order 1989, Gazette 1989, p 2275" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "024" ;
-    skos:prefLabel "Rotorua District" .
+    skos:prefLabel "Rotorua District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/025> a skos:Concept,
+:025
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Bay of Plenty Region) Reorganisation Order 1989, Gazette 1989, p 2275" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "025" ;
-    skos:prefLabel "Whakatane District" .
+    skos:prefLabel "Whakatane District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/026> a skos:Concept,
+:026
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Bay of Plenty Region) Reorganisation Order 1989, Gazette 1989, p 2275" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "026" ;
-    skos:prefLabel "Kawerau District" .
+    skos:prefLabel "Kawerau District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/027> a skos:Concept,
+:027
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:altLabel "Opotiki District" ;
     skos:definition "A district council constituted by Local Government (Bay of Plenty Region) Reorganisation Order 1989, Gazette 1989, p 2275 and amended by clause 3 of the Local Government (Ōpōtiki District Council) Order 2019 (LI 2019/331)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "027" ;
-    skos:prefLabel "Ōpōtiki District" .
+    skos:prefLabel "Ōpōtiki District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/028> a skos:Concept,
+:028
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by 	Local Government (Gisborne Region) Reorganisation Order 1989, Gazette 1989, p 2328" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "028" ;
-    skos:prefLabel "Gisborne District" .
+    skos:prefLabel "Gisborne District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/029> a skos:Concept,
+:029
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Hawke’s Bay Region) Reorganisation Order 1989, Gazette 1989, p 2334" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "029" ;
-    skos:prefLabel "Wairoa District" .
+    skos:prefLabel "Wairoa District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/030> a skos:Concept,
+:030
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Hawke’s Bay Region) Reorganisation Order 1989, Gazette 1989, p 2334" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "030" ;
-    skos:prefLabel "Hastings District" .
+    skos:prefLabel "Hastings District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/031> a skos:Concept,
+:031
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by Local Government (Hawke’s Bay Region) Reorganisation Order 1989, Gazette 1989, p 2334" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "031" ;
-    skos:prefLabel "Napier City" .
+    skos:prefLabel "Napier City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/032> a skos:Concept,
+:032
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Hawke’s Bay Region) Reorganisation Order 1989, Gazette 1989, p 2334" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "032" ;
-    skos:prefLabel "Central Hawke's Bay District" .
+    skos:prefLabel "Central Hawke's Bay District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/033> a skos:Concept,
+:033
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Taranaki Region) Reorganisation Order 1989, Gazette 1989, p 2445" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "033" ;
-    skos:prefLabel "New Plymouth District" .
+    skos:prefLabel "New Plymouth District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/034> a skos:Concept,
+:034
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Taranaki Region) Reorganisation Order 1989, Gazette 1989, p 2445" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "034" ;
-    skos:prefLabel "Stratford District" .
+    skos:prefLabel "Stratford District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/035> a skos:Concept,
+:035
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Taranaki Region) Reorganisation Order 1989, Gazette 1989, p 2445" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "035" ;
-    skos:prefLabel "South Taranaki District" .
+    skos:prefLabel "South Taranaki District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/036> a skos:Concept,
+:036
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Manawatu-Wanganui Region) Reorganisation Order 1989, Gazette 1989, p 2351" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "036" ;
-    skos:prefLabel "Ruapehu District" .
+    skos:prefLabel "Ruapehu District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/037> a skos:Concept,
+:037
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Manawatu-Wanganui Region) Reorganisation Order 1989, Gazette 1989, p 2351 and amended by clause 3 of the Local Government (Whanganui District Council) Order 2015 (LI 2015/275)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "037" ;
-    skos:prefLabel "Whanganui District" .
+    skos:prefLabel "Whanganui District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/038> a skos:Concept,
+:038
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Manawatu-Wanganui Region) Reorganisation Order 1989, Gazette 1989, p 2351" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "038" ;
-    skos:prefLabel "Rangitikei District" .
+    skos:prefLabel "Rangitikei District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/039> a skos:Concept,
+:039
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Manawatu-Wanganui Region) Reorganisation Order 1989, Gazette 1989, p 2351" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "039" ;
-    skos:prefLabel "Manawatu District" .
+    skos:prefLabel "Manawatu District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/040> a skos:Concept,
+:040
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by Local Government (Manawatu-Wanganui Region) Reorganisation Order 1989, Gazette 1989, p 2351" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "040" ;
-    skos:prefLabel "Palmerston North City" .
+    skos:prefLabel "Palmerston North City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/041> a skos:Concept,
+:041
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Manawatu-Wanganui Region) Reorganisation Order 1989, Gazette 1989, p 2351" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "041" ;
-    skos:prefLabel "Tararua District" .
+    skos:prefLabel "Tararua District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/042> a skos:Concept,
+:042
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Manawatu-Wanganui Region) Reorganisation Order 1989, Gazette 1989, p 2351" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "042" ;
-    skos:prefLabel "Horowhenua District" .
+    skos:prefLabel "Horowhenua District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/043> a skos:Concept,
+:043
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Wellington Region) Reorganisation Order 1989, Gazette 1989, p 2491" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "043" ;
-    skos:prefLabel "Kapiti Coast District" .
+    skos:prefLabel "Kapiti Coast District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/044> a skos:Concept,
+:044
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by Local Government (Wellington Region) Reorganisation Order 1989, Gazette 1989, p 2491" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "044" ;
-    skos:prefLabel "Porirua City" .
+    skos:prefLabel "Porirua City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/045> a skos:Concept,
+:045
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by Local Government (Wellington Region) Reorganisation Order 1989, Gazette 1989, p 2491" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "045" ;
-    skos:prefLabel "Upper Hutt City" .
+    skos:prefLabel "Upper Hutt City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/046> a skos:Concept,
+:046
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:altLabel "Lower Hutt City" ;
     skos:definition "A city council constituted by Local Government (Wellington Region) Reorganisation Order 1989, Gazette 1989, p 2491" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "046" ;
-    skos:prefLabel "Hutt City" .
+    skos:prefLabel "Hutt City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/047> a skos:Concept,
+:047
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by Local Government (Wellington Region) Reorganisation Order 1989, Gazette 1989, p 2491" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "047" ;
-    skos:prefLabel "Wellington City" .
+    skos:prefLabel "Wellington City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/048> a skos:Concept,
+:048
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Wellington Region) Reorganisation Order 1989, Gazette 1989, p 2491" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "048" ;
-    skos:prefLabel "Masterton District" .
+    skos:prefLabel "Masterton District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/049> a skos:Concept,
+:049
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Wellington Region) Reorganisation Order 1989, Gazette 1989, p 2491" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "049" ;
-    skos:prefLabel "Carterton District" .
+    skos:prefLabel "Carterton District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/050> a skos:Concept,
+:050
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Wellington Region) Reorganisation Order 1989, Gazette 1989, p 2491" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "050" ;
-    skos:prefLabel "South Wairarapa District" .
+    skos:prefLabel "South Wairarapa District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/051> a skos:Concept,
+:051
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Nelson–Marlborough Region) Reorganisation Order 1989, Gazette 1989, p 2375" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "051" ;
-    skos:prefLabel "Tasman District" .
+    skos:prefLabel "Tasman District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/052> a skos:Concept,
+:052
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by Local Government (Nelson–Marlborough Region) Reorganisation Order 1989, Gazette 1989, p 2375" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "052" ;
-    skos:prefLabel "Nelson City" .
+    skos:prefLabel "Nelson City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/053> a skos:Concept,
+:053
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Nelson–Marlborough Region) Reorganisation Order 1989, Gazette 1989, p 2375" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "053" ;
-    skos:prefLabel "Marlborough District" .
+    skos:prefLabel "Marlborough District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/054> a skos:Concept,
+:054
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Nelson–Marlborough Region) Reorganisation Order 1989, Gazette 1989, p 2375" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "054" ;
-    skos:prefLabel "Kaikoura District" .
+    skos:prefLabel "Kaikoura District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/055> a skos:Concept,
+:055
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (West Coast Region) Reorganisation Order 1989, Gazette 1989, p 2517" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "055" ;
-    skos:prefLabel "Buller District" .
+    skos:prefLabel "Buller District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/056> a skos:Concept,
+:056
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (West Coast Region) Reorganisation Order 1989, Gazette 1989, p 2517" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "056" ;
-    skos:prefLabel "Grey District" .
+    skos:prefLabel "Grey District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/057> a skos:Concept,
+:057
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (West Coast Region) Reorganisation Order 1989, Gazette 1989, p 2517" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "057" ;
-    skos:prefLabel "Westland District" .
+    skos:prefLabel "Westland District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/058> a skos:Concept,
+:058
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Canterbury Region) Reorganisation Order 1989, Gazette 1989, p 2296" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "058" ;
-    skos:prefLabel "Hurunui District" .
+    skos:prefLabel "Hurunui District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/059> a skos:Concept,
+:059
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Canterbury Region) Reorganisation Order 1989, Gazette 1989, p 2296" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "059" ;
-    skos:prefLabel "Waimakariri District" .
+    skos:prefLabel "Waimakariri District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/060> a skos:Concept,
+:060
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by Local Government (Canterbury Region) Reorganisation Order 1989, Gazette 1989, p 2296" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "060" ;
-    skos:prefLabel "Christchurch City" .
+    skos:prefLabel "Christchurch City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/062> a skos:Concept,
+:062
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Canterbury Region) Reorganisation Order 1989, Gazette 1989, p 2296" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "062" ;
-    skos:prefLabel "Selwyn District" .
+    skos:prefLabel "Selwyn District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/063> a skos:Concept,
+:063
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Canterbury Region) Reorganisation Order 1989, Gazette 1989, p 2296" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "063" ;
-    skos:prefLabel "Ashburton District" .
+    skos:prefLabel "Ashburton District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/064> a skos:Concept,
+:064
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Canterbury Region) Reorganisation Order 1989, Gazette 1989, p 2296" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "064" ;
-    skos:prefLabel "Timaru District" .
+    skos:prefLabel "Timaru District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/065> a skos:Concept,
+:065
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Canterbury Region) Reorganisation Order 1989, Gazette 1989, p 2296" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "065" ;
-    skos:prefLabel "Mackenzie District" .
+    skos:prefLabel "Mackenzie District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/066> a skos:Concept,
+:066
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Canterbury Region) Reorganisation Order 1989, Gazette 1989, p 2296" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "066" ;
-    skos:prefLabel "Waimate District" .
+    skos:prefLabel "Waimate District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/067> a skos:Concept,
+:067
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A territorial authority constituted by the Chatham Islands Council Act 1995" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "067" ;
-    skos:prefLabel "Chatham Islands Territory" .
+    skos:prefLabel "Chatham Islands Territory" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/068> a skos:Concept,
+:068
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Otago Region) Reorganisation Order 1989, Gazette 1989, p 2408" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "068" ;
-    skos:prefLabel "Waitaki District" .
+    skos:prefLabel "Waitaki District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/069> a skos:Concept,
+:069
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Otago Region) Reorganisation Order 1989, Gazette 1989, p 2408" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "069" ;
-    skos:prefLabel "Central Otago District" .
+    skos:prefLabel "Central Otago District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/070> a skos:Concept,
+:070
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Otago Region) Reorganisation Order 1989, Gazette 1989, p 2408" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "070" ;
-    skos:prefLabel "Queenstown-Lakes District" .
+    skos:prefLabel "Queenstown-Lakes District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/071> a skos:Concept,
+:071
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by Local Government (Otago Region) Reorganisation Order 1989, Gazette 1989, p 2408" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "071" ;
-    skos:prefLabel "Dunedin City" .
+    skos:prefLabel "Dunedin City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/072> a skos:Concept,
+:072
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Otago Region) Reorganisation Order 1989, Gazette 1989, p 2408" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "072" ;
-    skos:prefLabel "Clutha District" .
+    skos:prefLabel "Clutha District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/073> a skos:Concept,
+:073
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Southland Region) Reorganisation Order 1989, Gazette 1989, p 2430" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "073" ;
-    skos:prefLabel "Southland District" .
+    skos:prefLabel "Southland District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/074> a skos:Concept,
+:074
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Southland Region) Reorganisation Order 1989, Gazette 1989, p 2430" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "074" ;
-    skos:prefLabel "Gore District" .
+    skos:prefLabel "Gore District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/075> a skos:Concept,
+:075
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by Local Government (Invercargill City) Reorganisation Order 1990, Gazette 1990, p 2326" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "075" ;
-    skos:prefLabel "Invercargill City" .
+    skos:prefLabel "Invercargill City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/076> a skos:Concept,
+:076
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by section 6(1) of the Local Government (Auckland Council) Act 2009 and amended by section 113(1) of the Local Government (Auckland Transitional Provisions) Act 2010 (2010 No 37)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "076" ;
-    skos:prefLabel "Auckland" .
+    skos:prefLabel "Auckland" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/10> a skos:Concept,
+:10
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Auckland Region) Reorganisation Order 1989 and amalgamated into Auckland by section 6(1) of the Local Government (Auckland Council) Act 2009" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "10" ;
-    skos:prefLabel "Franklin District" .
+    skos:prefLabel "Franklin District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/14> a skos:Concept,
+:14
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "14" ;
-    skos:prefLabel "Not Used" .
+    skos:prefLabel "Not Used" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/22> a skos:Concept,
+:22
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "An alternative spelling of Western Bay of Plenty District" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "22" ;
-    skos:prefLabel "Western Bay of Plenty Dist." .
+    skos:prefLabel "Western Bay of Plenty Dist." ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/32> a skos:Concept,
+:32
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "An alternative spelling of Central Hawke's Bay District" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "32" ;
-    skos:prefLabel "Central Hawkes Bay District" .
+    skos:prefLabel "Central Hawkes Bay District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/4> a skos:Concept,
+:4
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Auckland Region) Reorganisation Order 1989 and amalgamated into Auckland by section 6(1) of the Local Government (Auckland Council) Act 2009" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "4" ;
-    skos:prefLabel "Rodney District" .
+    skos:prefLabel "Rodney District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/5> a skos:Concept,
+:5
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by Local Government (Auckland Region) Reorganisation Order 1989 and amalgamated into Auckland by section 6(1) of the Local Government (Auckland Council) Act 2009" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "5" ;
-    skos:prefLabel "North Shore City" .
+    skos:prefLabel "North Shore City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/6> a skos:Concept,
+:6
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by Local Government (Auckland Region) Reorganisation Order 1989 and amalgamated into Auckland by section 6(1) of the Local Government (Auckland Council) Act 2009" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "6" ;
-    skos:prefLabel "Waitakere City" .
+    skos:prefLabel "Waitakere City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/61> a skos:Concept,
+:61
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Canterbury Region) Reorganisation Order 1989, Gazette 1989, p 2296, and amalgamated by Christchurch City Council in 2006" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "61" ;
-    skos:prefLabel "Banks Peninsula District" .
+    skos:prefLabel "Banks Peninsula District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/7> a skos:Concept,
+:7
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by Local Government (Auckland Region) Reorganisation Order 1989 and amalgamated into Auckland by section 6(1) of the Local Government (Auckland Council) Act 2009" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "7" ;
-    skos:prefLabel "Auckland City" .
+    skos:prefLabel "Auckland City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/8> a skos:Concept,
+:8
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A city council constituted by Local Government (Auckland Region) Reorganisation Order 1989 and amalgamated into Auckland by section 6(1) of the Local Government (Auckland Council) Act 2009" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "8" ;
-    skos:prefLabel "Manukau City" .
+    skos:prefLabel "Manukau City" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/800> a skos:Concept,
+:800
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "800" ;
-    skos:prefLabel "Minister of Local Government" .
+    skos:prefLabel "Minister of Local Government" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/9> a skos:Concept,
+:9
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
     skos:definition "A district council constituted by Local Government (Auckland Region) Reorganisation Order 1989 and amalgamated into Auckland by section 6(1) of the Local Government (Auckland Council) Act 2009" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:inScheme cs: ;
     skos:notation "9" ;
-    skos:prefLabel "Papakura District" .
+    skos:prefLabel "Papakura District" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority/999> a skos:Concept,
+:999
+    a
+        skos:Concept ,
         termtype:AdminUnit ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/nz-territorial-authority> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "999" ;
-    skos:prefLabel "Area Outside Territorial Authority" .
+    skos:prefLabel "Area Outside Territorial Authority" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/nz-territorial-authority> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "NZ Territorial Authorities"@en ;
+    skos:hasTopConcept
+        :001 ,
+        :002 ,
+        :003 ,
+        :011 ,
+        :012 ,
+        :013 ,
+        :015 ,
+        :016 ,
+        :017 ,
+        :018 ,
+        :019 ,
+        :020 ,
+        :021 ,
+        :022 ,
+        :023 ,
+        :024 ,
+        :025 ,
+        :026 ,
+        :027 ,
+        :028 ,
+        :029 ,
+        :030 ,
+        :031 ,
+        :032 ,
+        :033 ,
+        :034 ,
+        :035 ,
+        :036 ,
+        :037 ,
+        :038 ,
+        :039 ,
+        :040 ,
+        :041 ,
+        :042 ,
+        :043 ,
+        :044 ,
+        :045 ,
+        :046 ,
+        :047 ,
+        :048 ,
+        :049 ,
+        :050 ,
+        :051 ,
+        :052 ,
+        :053 ,
+        :054 ,
+        :055 ,
+        :056 ,
+        :057 ,
+        :058 ,
+        :059 ,
+        :060 ,
+        :062 ,
+        :063 ,
+        :064 ,
+        :065 ,
+        :066 ,
+        :067 ,
+        :068 ,
+        :069 ,
+        :070 ,
+        :071 ,
+        :072 ,
+        :073 ,
+        :074 ,
+        :075 ,
+        :076 ,
+        :10 ,
+        :14 ,
+        :22 ,
+        :32 ,
+        :4 ,
+        :5 ,
+        :6 ,
+        :61 ,
+        :7 ,
+        :8 ,
+        :800 ,
+        :9 ,
+        :999 ;
     skos:prefLabel "NZ Territorial Authorities" ;
-    skos:scopeNote "termtype:AdminUnit" .
+    skos:scopeNote "termtype:AdminUnit" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:41.456130"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:41.323732"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/CSD-Header/nz-territorial-authority.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/CSD-Header/nz-territorial-authority.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

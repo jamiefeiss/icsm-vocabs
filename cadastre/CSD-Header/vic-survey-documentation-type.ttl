@@ -1,320 +1,647 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix termtype: <https://linked.data.gov.au/def/csdm/termtypes/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX termtype: <https://linked.data.gov.au/def/csdm/termtypes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/aapp> a skos:Concept,
+:aapp
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "aapp" ;
-    skos:prefLabel "Application To Amend Planning Permit" .
+    skos:prefLabel "Application To Amend Planning Permit" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/ad> a skos:Concept,
+:ad
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "ad" ;
-    skos:prefLabel "Application Document" .
+    skos:prefLabel "Application Document" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/afr> a skos:Concept,
+:afr
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "afr" ;
-    skos:prefLabel "Abstract of Field Records" .
+    skos:prefLabel "Abstract of Field Records" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/ar> a skos:Concept,
+:ar
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "ar" ;
-    skos:prefLabel "Arborist report" .
+    skos:prefLabel "Arborist report" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/c-56> a skos:Concept,
+:c-56
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "c-56" ;
-    skos:prefLabel "c.56 Residential subdivision assessment" .
+    skos:prefLabel "c.56 Residential subdivision assessment" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/cd> a skos:Concept,
+:cd
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "cd" ;
-    skos:prefLabel "Covenant Document" .
+    skos:prefLabel "Covenant Document" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/cep> a skos:Concept,
+:cep
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "cep" ;
-    skos:prefLabel "Compiled ePlan" .
+    skos:prefLabel "Compiled ePlan" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/cep-vr> a skos:Concept,
+:cep-vr
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "cep-vr" ;
-    skos:prefLabel "Compiled ePlan Validation Report" .
+    skos:prefLabel "Compiled ePlan Validation Report" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/cl> a skos:Concept,
+:cl
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "cl" ;
-    skos:prefLabel "Covering Letter" .
+    skos:prefLabel "Covering Letter" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/cpp> a skos:Concept,
+:cpp
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "cpp" ;
-    skos:prefLabel "Copy of Planning Permit" .
+    skos:prefLabel "Copy of Planning Permit" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/cps> a skos:Concept,
+:cps
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "cps" ;
-    skos:prefLabel "Compiled Plan Sheets" .
+    skos:prefLabel "Compiled Plan Sheets" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/ct> a skos:Concept,
+:ct
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "ct" ;
-    skos:prefLabel "Copy of Title" .
+    skos:prefLabel "Copy of Title" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/dsg> a skos:Concept,
+:dsg
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "dsg" ;
-    skos:prefLabel "Digital Survey Geometry" .
+    skos:prefLabel "Digital Survey Geometry" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/edf> a skos:Concept,
+:edf
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "edf" ;
-    skos:prefLabel "Enhanced Diagram File" .
+    skos:prefLabel "Enhanced Diagram File" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/edf-cep> a skos:Concept,
+:edf-cep
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "edf-cep" ;
-    skos:prefLabel "Enhanced Diagram File (Compiled ePlan)" .
+    skos:prefLabel "Enhanced Diagram File (Compiled ePlan)" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/ep> a skos:Concept,
+:ep
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "ep" ;
-    skos:prefLabel "Engineering Plan" .
+    skos:prefLabel "Engineering Plan" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/eplan> a skos:Concept,
+:eplan
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "eplan" ;
-    skos:prefLabel "ePlan" .
+    skos:prefLabel "ePlan" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/eplan-vr> a skos:Concept,
+:eplan-vr
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "eplan-vr" ;
-    skos:prefLabel "ePlan Validation Report" .
+    skos:prefLabel "ePlan Validation Report" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/form-1> a skos:Concept,
+:form-1
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "form-1" ;
-    skos:prefLabel "Form 1 / Owners Consent" .
+    skos:prefLabel "Form 1 / Owners Consent" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/form-13> a skos:Concept,
+:form-13
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "form-13" ;
-    skos:prefLabel "Form 13 and SAFR Declaration" .
+    skos:prefLabel "Form 13 and SAFR Declaration" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/form-8> a skos:Concept,
+:form-8
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "form-8" ;
-    skos:prefLabel "Application to Amend Certified Plan (Form 8)" .
+    skos:prefLabel "Application to Amend Certified Plan (Form 8)" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/lvp> a skos:Concept,
+:lvp
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "lvp" ;
-    skos:prefLabel "Landscape or vegetation plan" .
+    skos:prefLabel "Landscape or vegetation plan" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/n-sd> a skos:Concept,
+:n-sd
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "n-sd" ;
-    skos:prefLabel "Neighbourhood and Site Description" .
+    skos:prefLabel "Neighbourhood and Site Description" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/nico-e-od> a skos:Concept,
+:nico-e-od
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "nico-e-od" ;
-    skos:prefLabel "NICO/Encumbrance Overlay Diagram" .
+    skos:prefLabel "NICO/Encumbrance Overlay Diagram" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/ocacp> a skos:Concept,
+:ocacp
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "ocacp" ;
-    skos:prefLabel "Owners Consent to Amend Certified Plan" .
+    skos:prefLabel "Owners Consent to Amend Certified Plan" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/ocd> a skos:Concept,
+:ocd
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "ocd" ;
-    skos:prefLabel "Owners Corporation Details" .
+    skos:prefLabel "Owners Corporation Details" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/odt> a skos:Concept,
+:odt
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "odt" ;
-    skos:prefLabel "Other Document Type" .
+    skos:prefLabel "Other Document Type" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/p-ara-c> a skos:Concept,
+:p-ara-c
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "p-ara-c" ;
-    skos:prefLabel "Pre-approved RA Consent" .
+    skos:prefLabel "Pre-approved RA Consent" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/pe> a skos:Concept,
+:pe
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "pe" ;
-    skos:prefLabel "Plan for Endorsement" .
+    skos:prefLabel "Plan for Endorsement" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/photo> a skos:Concept,
+:photo
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "photo" ;
-    skos:prefLabel "Photos" .
+    skos:prefLabel "Photos" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/psc> a skos:Concept,
+:psc
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "psc" ;
-    skos:prefLabel "Plan of Subdivision or Consolidation" .
+    skos:prefLabel "Plan of Subdivision or Consolidation" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/r-rfi> a skos:Concept,
+:r-rfi
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "r-rfi" ;
-    skos:prefLabel "Response to Request for Further Information" .
+    skos:prefLabel "Response to Request for Further Information" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/r-rfi-ra> a skos:Concept,
+:r-rfi-ra
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "r-rfi-ra" ;
-    skos:prefLabel "Response to Request for Further Information - Referral Authority" .
+    skos:prefLabel "Response to Request for Further Information - Referral Authority" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/ret-pp> a skos:Concept,
+:ret-pp
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "ret-pp" ;
-    skos:prefLabel "Request for Extension of Time for a Planning Permit" .
+    skos:prefLabel "Request for Extension of Time for a Planning Permit" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/rfi-eot-r> a skos:Concept,
+:rfi-eot-r
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "rfi-eot-r" ;
-    skos:prefLabel "RFI Extension of Time Request" .
+    skos:prefLabel "RFI Extension of Time Request" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/rl> a skos:Concept,
+:rl
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "rl" ;
-    skos:prefLabel "Release for Lodgement" .
+    skos:prefLabel "Release for Lodgement" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/rnhf> a skos:Concept,
+:rnhf
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "rnhf" ;
-    skos:prefLabel "Road Name History Form" .
+    skos:prefLabel "Road Name History Form" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/rsc> a skos:Concept,
+:rsc
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "rsc" ;
-    skos:prefLabel "Request for Secondary Consent" .
+    skos:prefLabel "Request for Secondary Consent" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/safr> a skos:Concept,
+:safr
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "safr" ;
-    skos:prefLabel "Supplementary Abstract of Field Records (SAFR)" .
+    skos:prefLabel "Supplementary Abstract of Field Records (SAFR)" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/scdr-s> a skos:Concept,
+:scdr-s
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "scdr-s" ;
-    skos:prefLabel "Site context and design response (Subdivision)" .
+    skos:prefLabel "Site context and design response (Subdivision)" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/sda> a skos:Concept,
+:sda
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "sda" ;
-    skos:prefLabel "Statutory Declaration for Advertising" .
+    skos:prefLabel "Statutory Declaration for Advertising" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/sp> a skos:Concept,
+:sp
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "sp" ;
-    skos:prefLabel "Survey plan" .
+    skos:prefLabel "Survey plan" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/sr> a skos:Concept,
+:sr
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "sr" ;
-    skos:prefLabel "Surveyors Report" .
+    skos:prefLabel "Surveyors Report" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/ssr> a skos:Concept,
+:ssr
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "ssr" ;
-    skos:prefLabel "Supplementary Surveyors Report" .
+    skos:prefLabel "Supplementary Surveyors Report" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/ta> a skos:Concept,
+:ta
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "ta" ;
-    skos:prefLabel "Telecommunications Advice" .
+    skos:prefLabel "Telecommunications Advice" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/ur-ocm> a skos:Concept,
+:ur-ocm
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "ur-ocm" ;
-    skos:prefLabel "Unanimous Resolution of Owners Corporation Members" .
+    skos:prefLabel "Unanimous Resolution of Owners Corporation Members" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/ur-vcat> a skos:Concept,
+:ur-vcat
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "ur-vcat" ;
-    skos:prefLabel "Unanimous Resolution or VCAT Order added" .
+    skos:prefLabel "Unanimous Resolution or VCAT Order added" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/vcat-34d> a skos:Concept,
+:vcat-34d
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "vcat-34d" ;
-    skos:prefLabel "VCAT Order Under section 34D" .
+    skos:prefLabel "VCAT Order Under section 34D" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type/vsd> a skos:Concept,
+:vsd
+    a
+        skos:Concept ,
         termtype:DocType ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "vsd" ;
-    skos:prefLabel "VicSmart Supporting Document" .
+    skos:prefLabel "VicSmart Supporting Document" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/vic-survey-documentation-type> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "VIC types of Survey Documentation"@en ;
+    skos:hasTopConcept
+        :aapp ,
+        :ad ,
+        :afr ,
+        :ar ,
+        :c-56 ,
+        :cd ,
+        :cep ,
+        :cep-vr ,
+        :cl ,
+        :cpp ,
+        :cps ,
+        :ct ,
+        :dsg ,
+        :edf ,
+        :edf-cep ,
+        :ep ,
+        :eplan ,
+        :eplan-vr ,
+        :form-1 ,
+        :form-13 ,
+        :form-8 ,
+        :lvp ,
+        :n-sd ,
+        :nico-e-od ,
+        :ocacp ,
+        :ocd ,
+        :odt ,
+        :p-ara-c ,
+        :pe ,
+        :photo ,
+        :psc ,
+        :r-rfi ,
+        :r-rfi-ra ,
+        :ret-pp ,
+        :rfi-eot-r ,
+        :rl ,
+        :rnhf ,
+        :rsc ,
+        :safr ,
+        :scdr-s ,
+        :sda ,
+        :sp ,
+        :sr ,
+        :ssr ,
+        :ta ,
+        :ur-ocm ,
+        :ur-vcat ,
+        :vcat-34d ,
+        :vsd ;
     skos:prefLabel "VIC types of Survey Documentation" ;
-    skos:scopeNote "termtype:DocType" .
+    skos:scopeNote "termtype:DocType" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:34.273987"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:34.170546"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/CSD-Header/vic-survey-documentation-type.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/CSD-Header/vic-survey-documentation-type.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

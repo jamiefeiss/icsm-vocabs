@@ -1,138 +1,246 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix termtype: <https://linked.data.gov.au/def/csdm/termtypes/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/wa-survey-type/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/wa-survey-type>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX termtype: <https://linked.data.gov.au/def/csdm/termtypes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type/SSA> a skos:Concept,
+:SSA
+    a
+        skos:Concept ,
         termtype:SurveyType ;
     skos:definition "Survey in compliance with Survey Practice Guidelines for Subdivisions within Special Survey Areas (WA)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-survey-type> ;
+    skos:inScheme cs: ;
     skos:notation "SSA" ;
-    skos:prefLabel "Special Survey Area" .
+    skos:prefLabel "Special Survey Area" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type/community-title-building> a skos:Concept,
+:community-title-building
+    a
+        skos:Concept ,
         termtype:SurveyType ;
     skos:altLabel "CTB" ;
     skos:definition "Community Title (Building) Plan" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-survey-type> ;
+    skos:inScheme cs: ;
     skos:notation "community-title-building" ;
-    skos:prefLabel "CommunityTitle(Building)" .
+    skos:prefLabel "CommunityTitle(Building)" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type/community-title-land> a skos:Concept,
+:community-title-land
+    a
+        skos:Concept ,
         termtype:SurveyType ;
     skos:altLabel "CTL" ;
     skos:definition "Community Title (Land) Plan" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-survey-type> ;
+    skos:inScheme cs: ;
     skos:notation "community-title-land" ;
-    skos:prefLabel "CommunityTitle(Land)" .
+    skos:prefLabel "CommunityTitle(Land)" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type/compiled> a skos:Concept,
+:compiled
+    a
+        skos:Concept ,
         termtype:SurveyType ;
     skos:definition "No additional survey performed" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-survey-type> ;
+    skos:inScheme cs: ;
     skos:notation "compiled" ;
-    skos:prefLabel "Compiled" .
+    skos:prefLabel "Compiled" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type/conventional> a skos:Concept,
+:conventional
+    a
+        skos:Concept ,
         termtype:SurveyType ;
     skos:definition "Survey - Conventional Survey" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-survey-type> ;
+    skos:inScheme cs: ;
     skos:notation "conventional" ;
-    skos:prefLabel "Conventional" .
+    skos:prefLabel "Conventional" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type/conventional-unsurveyed-lots> a skos:Concept,
+:conventional-unsurveyed-lots
+    a
+        skos:Concept ,
         termtype:SurveyType ;
     skos:definition "Survey with unsurveyed Lots(s) - Conventional Survey with unsurveyed Lots(s)" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-survey-type> ;
+    skos:inScheme cs: ;
     skos:notation "conventional-unsurveyed-lots" ;
-    skos:prefLabel "Conventional-unsurveyed lots" .
+    skos:prefLabel "Conventional-unsurveyed lots" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type/csd> a skos:Concept,
+:csd
+    a
+        skos:Concept ,
         termtype:SurveyType ;
     skos:definition "Cadastral Survey Data (APX-05) attribute equivalent" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-survey-type> ;
+    skos:inScheme cs: ;
     skos:notation "csd" ;
-    skos:prefLabel "CSD" .
+    skos:prefLabel "CSD" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type/deposited-plan> a skos:Concept,
+:deposited-plan
+    a
+        skos:Concept ,
         termtype:SurveyType ;
     skos:altLabel "DP" ;
     skos:definition "Deposited Plan" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-survey-type> ;
+    skos:inScheme cs: ;
     skos:notation "deposited-plan" ;
-    skos:prefLabel "DepositedPlan" .
+    skos:prefLabel "DepositedPlan" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type/dsd> a skos:Concept,
+:dsd
+    a
+        skos:Concept ,
         termtype:SurveyType ;
     skos:definition "Landgate Database extract attribute equivalent" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-survey-type> ;
+    skos:inScheme cs: ;
     skos:notation "dsd" ;
-    skos:prefLabel "DSD" .
+    skos:prefLabel "DSD" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type/field-record> a skos:Concept,
+:field-record
+    a
+        skos:Concept ,
         termtype:SurveyType ;
     skos:altLabel "FB" ;
     skos:definition "Field Record " ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-survey-type> ;
+    skos:inScheme cs: ;
     skos:notation "field-record" ;
-    skos:prefLabel "FieldRecord" .
+    skos:prefLabel "FieldRecord" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type/scheme-plan> a skos:Concept,
+:scheme-plan
+    a
+        skos:Concept ,
         termtype:SurveyType ;
     skos:definition "Scheme" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-survey-type> ;
+    skos:inScheme cs: ;
     skos:notation "scheme-plan" ;
-    skos:prefLabel "SchemePlan" .
+    skos:prefLabel "SchemePlan" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type/strata-plan> a skos:Concept,
+:strata-plan
+    a
+        skos:Concept ,
         termtype:SurveyType ;
     skos:altLabel "BSP" ;
     skos:definition "Strata Plan" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-survey-type> ;
+    skos:inScheme cs: ;
     skos:notation "strata-plan" ;
-    skos:prefLabel "StrataPlan" .
+    skos:prefLabel "StrataPlan" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type/survey-by-coordinates> a skos:Concept,
+:survey-by-coordinates
+    a
+        skos:Concept ,
         termtype:SurveyType ;
     skos:definition "Survey by Coordinates" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-survey-type> ;
+    skos:inScheme cs: ;
     skos:notation "survey-by-coordinates" ;
-    skos:prefLabel "Coordinates" .
+    skos:prefLabel "Coordinates" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type/survey-sheet> a skos:Concept,
+:survey-sheet
+    a
+        skos:Concept ,
         termtype:SurveyType ;
     skos:altLabel "SSA" ;
     skos:definition "Survey Sheet" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-survey-type> ;
+    skos:inScheme cs: ;
     skos:notation "survey-sheet" ;
-    skos:prefLabel "Survey Sheet" .
+    skos:prefLabel "Survey Sheet" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type/survey-strata-plan> a skos:Concept,
+:survey-strata-plan
+    a
+        skos:Concept ,
         termtype:SurveyType ;
     skos:altLabel "SSP" ;
     skos:definition "Survey-Strata Plan" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/wa-survey-type> ;
+    skos:inScheme cs: ;
     skos:notation "survey-strata-plan" ;
-    skos:prefLabel "SurveyStrataPlan" .
+    skos:prefLabel "SurveyStrataPlan" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/wa-survey-type> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "WA CSD Survey Type"@en ;
+    skos:hasTopConcept
+        :SSA ,
+        :community-title-building ,
+        :community-title-land ,
+        :compiled ,
+        :conventional ,
+        :conventional-unsurveyed-lots ,
+        :csd ,
+        :deposited-plan ,
+        :dsd ,
+        :field-record ,
+        :scheme-plan ,
+        :strata-plan ,
+        :survey-by-coordinates ,
+        :survey-sheet ,
+        :survey-strata-plan ;
     skos:prefLabel "WA CSD Survey Type" ;
-    skos:scopeNote "termtype:SurveyType" .
+    skos:scopeNote "termtype:SurveyType" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:33.430769"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:33.322840"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/CSD-Header/wa-survey-type.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/CSD-Header/wa-survey-type.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.

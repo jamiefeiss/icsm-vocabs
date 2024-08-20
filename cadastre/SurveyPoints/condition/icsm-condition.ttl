@@ -1,278 +1,529 @@
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX : <https://linked.data.gov.au/def/csdm/icsm-monument-condition/>
+PREFIX cs: <https://linked.data.gov.au/def/csdm/icsm-monument-condition>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX surv: <https://linked.data.gov.au/def/csdm/surveyfeatures/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/abandoned> a skos:Concept,
+:abandoned
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "abandoned" ;
-    skos:prefLabel "Abandoned" .
+    skos:prefLabel "Abandoned" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/conv> a skos:Concept,
+:conv
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:definition "Derived from DCDB" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "conv" ;
-    skos:prefLabel "Conversion" .
+    skos:prefLabel "Conversion" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/dest> a skos:Concept,
+:dest
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:definition "The mark was destroyed" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "dest" ;
-    skos:prefLabel "Destroyed" .
+    skos:prefLabel "Destroyed" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/disturbed> a skos:Concept,
+:disturbed
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "disturbed" ;
-    skos:prefLabel "Disturbed" .
+    skos:prefLabel "Disturbed" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/dmgd> a skos:Concept,
+:dmgd
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:definition "The mark was damaged" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "dmgd" ;
-    skos:prefLabel "Damaged" .
+    skos:prefLabel "Damaged" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/dngr> a skos:Concept,
+:dngr
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "dngr" ;
-    skos:prefLabel "Dangerous" .
+    skos:prefLabel "Dangerous" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/empl> a skos:Concept,
+:empl
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:definition "New mark placed" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "empl" ;
-    skos:prefLabel "Emplaced" .
+    skos:prefLabel "Emplaced" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/found> a skos:Concept,
+:found
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "found" ;
-    skos:prefLabel "Found" .
+    skos:prefLabel "Found" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/impm> a skos:Concept,
+:impm
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:definition "The boundary mark could not be placed" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "impm" ;
-    skos:prefLabel "Impracticable to Mark" .
+    skos:prefLabel "Impracticable to Mark" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/leaning> a skos:Concept,
+:leaning
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "leaning" ;
-    skos:prefLabel "Leaning" .
+    skos:prefLabel "Leaning" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/loose> a skos:Concept,
+:loose
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "loose" ;
-    skos:prefLabel "Loose" .
+    skos:prefLabel "Loose" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/mkfd> a skos:Concept,
+:mkfd
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:definition "The mark is in good condition and is suitable for survey purposes" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "mkfd" ;
-    skos:prefLabel "Mark Found" .
+    skos:prefLabel "Mark Found" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/move> a skos:Concept,
+:move
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:altLabel "Disturbed" ;
     skos:definition "The mark has been disturbed from its original position" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "move" ;
-    skos:prefLabel "Moved" .
+    skos:prefLabel "Moved" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/nacc> a skos:Concept,
+:nacc
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:definition "The mark was not accessible" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "nacc" ;
-    skos:prefLabel "Not Accessible" .
+    skos:prefLabel "Not Accessible" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/nfnd> a skos:Concept,
+:nfnd
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:definition "The mark has been searched for and could not be found" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "nfnd" ;
-    skos:prefLabel "Searched For and Not Found" .
+    skos:prefLabel "Searched For and Not Found" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/nipple-damaged> a skos:Concept,
+:nipple-damaged
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "nipple-damaged" ;
-    skos:prefLabel "Nipple Damaged" .
+    skos:prefLabel "Nipple Damaged" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/not-found> a skos:Concept,
+:not-found
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "not-found" ;
-    skos:prefLabel "Not Found" .
+    skos:prefLabel "Not Found" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/not-used> a skos:Concept,
+:not-used
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "not-used" ;
-    skos:prefLabel "Not Used" .
+    skos:prefLabel "Not Used" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/nspe> a skos:Concept,
+:nspe
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:definition "The condition of the mark was not determined while the survey was being conducted" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "nspe" ;
-    skos:prefLabel "Not Specified" .
+    skos:prefLabel "Not Specified" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/offset> a skos:Concept,
+:offset
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "offset" ;
-    skos:prefLabel "Offset" .
+    skos:prefLabel "Offset" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/ok> a skos:Concept,
+:ok
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "ok" ;
-    skos:prefLabel "OK" .
+    skos:prefLabel "OK" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/online> a skos:Concept,
+:online
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "online" ;
-    skos:prefLabel "Online" .
+    skos:prefLabel "Online" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/origin> a skos:Concept,
+:origin
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "origin" ;
-    skos:prefLabel "Origin" .
+    skos:prefLabel "Origin" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/origin-unknown> a skos:Concept,
+:origin-unknown
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "origin-unknown" ;
-    skos:prefLabel "Origin unknown" .
+    skos:prefLabel "Origin unknown" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/out-of-position> a skos:Concept,
+:out-of-position
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "out-of-position" ;
-    skos:prefLabel "Out of Position" .
+    skos:prefLabel "Out of Position" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/plaque-missing> a skos:Concept,
+:plaque-missing
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "plaque-missing" ;
-    skos:prefLabel "Plaque Missing" .
+    skos:prefLabel "Plaque Missing" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/relb> a skos:Concept,
+:relb
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:altLabel "Reliable" ;
     skos:definition "The mark is in good condition and is suitable for survey purposes" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "relb" ;
-    skos:prefLabel "Reliably Placed" .
+    skos:prefLabel "Reliably Placed" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/remains> a skos:Concept,
+:remains
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "remains" ;
-    skos:prefLabel "Remains" .
+    skos:prefLabel "Remains" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/removed> a skos:Concept,
+:removed
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "removed" ;
-    skos:prefLabel "Removed" .
+    skos:prefLabel "Removed" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/remv> a skos:Concept,
+:remv
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:definition "The mark was removed when the survey was conducted" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "remv" ;
-    skos:prefLabel "Removed" .
+    skos:prefLabel "Removed" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/replaced> a skos:Concept,
+:replaced
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "replaced" ;
-    skos:prefLabel "Replaced" .
+    skos:prefLabel "Replaced" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/rusted> a skos:Concept,
+:rusted
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "rusted" ;
-    skos:prefLabel "Rusted" .
+    skos:prefLabel "Rusted" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/subm> a skos:Concept,
+:subm
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:definition "The mark was submerged" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "subm" ;
-    skos:prefLabel "Submerged" .
+    skos:prefLabel "Submerged" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/suspect> a skos:Concept,
+:suspect
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "suspect" ;
-    skos:prefLabel "Suspect" .
+    skos:prefLabel "Suspect" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/temp> a skos:Concept,
+:temp
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:definition "The mark used during the survey was only a temporary mark" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "temp" ;
-    skos:prefLabel "Temporary" .
+    skos:prefLabel "Temporary" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/thrt> a skos:Concept,
+:thrt
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:definition "The mark was in a position where it may become damaged or destroyed in future e.g., the mark is now the edge of a subsiding cliff" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "thrt" ;
-    skos:prefLabel "Threatened" .
+    skos:prefLabel "Threatened" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/unknown> a skos:Concept,
+:unknown
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "unknown" ;
-    skos:prefLabel "Unknown" .
+    skos:prefLabel "Unknown" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/unst> a skos:Concept,
+:unst
+    a
+        skos:Concept ,
         surv:ConditionCode ;
     skos:definition "The mark was in an unstable position" ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:inScheme cs: ;
     skos:notation "unst" ;
-    skos:prefLabel "Unstable" .
+    skos:prefLabel "Unstable" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition/unxt> a skos:Concept,
+:unxt
+    a
+        skos:Concept ,
         surv:ConditionCode ;
-    skos:inScheme <https://linked.data.gov.au/def/csdm/icsm-monument-condition> ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
     skos:notation "unxt" ;
-    skos:prefLabel "Uncertain Existence" .
+    skos:prefLabel "Uncertain Existence" ;
+    skos:topConceptOf cs: ;
+.
 
-<https://linked.data.gov.au/def/csdm/icsm-monument-condition> a skos:ConceptScheme ;
+<https://linked.data.gov.au/org/csdm-pg>
+    a schema:Organization ;
+    schema:name "CSDM Project Group" ;
+    schema:parentOrganization <https://linked.data.gov.au/org/icsm> ;
+    schema:url "https://icsm-au.github.io/3d-csdm/docs/"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    skos:definition "ICSM Monument Condition"@en ;
+    skos:hasTopConcept
+        :abandoned ,
+        :conv ,
+        :dest ,
+        :disturbed ,
+        :dmgd ,
+        :dngr ,
+        :empl ,
+        :found ,
+        :impm ,
+        :leaning ,
+        :loose ,
+        :mkfd ,
+        :move ,
+        :nacc ,
+        :nfnd ,
+        :nipple-damaged ,
+        :not-found ,
+        :not-used ,
+        :nspe ,
+        :offset ,
+        :ok ,
+        :online ,
+        :origin ,
+        :origin-unknown ,
+        :out-of-position ,
+        :plaque-missing ,
+        :relb ,
+        :remains ,
+        :removed ,
+        :remv ,
+        :replaced ,
+        :rusted ,
+        :subm ,
+        :suspect ,
+        :temp ,
+        :thrt ,
+        :unknown ,
+        :unst ,
+        :unxt ;
     skos:prefLabel "ICSM Monument Condition" ;
-    skos:scopeNote "surv:ConditionCode" .
+    skos:scopeNote "surv:ConditionCode" ;
+    schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
+    schema:dateCreated "2022-03-18"^^xsd:date ;
+    schema:dateModified "2024-04-11"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
 
-[] a prov:Activity ;
+[]    a prov:Activity ;
     prov:endedAtTime "2024-04-11T06:11:36.158161"^^xsd:dateTime ;
     prov:startedAtTime "2024-04-11T06:11:36.062430"^^xsd:dateTime ;
-    prov:used [ a prov:Entity ;
+    prov:used
+        [
+            a prov:Entity ;
             dct:format "application/json" ;
             dct:hasVersion "git:29bbdd91c50914400e0758872364ec1cea2d1501" ;
-            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/SurveyPoints/condition/icsm-condition.csv> ] ;
-    prov:wasAssociatedWith [ a prov:Agent,
+            rdfs:seeAlso <file:///home/runner/work/icsm-vocabs/icsm-vocabs/cadastre/SurveyPoints/condition/icsm-condition.csv> ;
+        ] ;
+    prov:wasAssociatedWith
+        [
+            a
+                prov:Agent ,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
             dct:hasVersion "0.3.44" ;
-            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] ;
-    prov:wasInformedBy [ dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ] .
-
+            rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ;
+        ] ;
+    prov:wasInformedBy
+        [
+            dct:identifier "42611fe7-ad51-40e1-adf8-e3a0f1ee7a83" ;
+        ] ; ;
+.
