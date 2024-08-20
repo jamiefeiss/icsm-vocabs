@@ -172,8 +172,8 @@ g.bind("", CS, override=True)
 g.serialize(destination="../../unggim-themes.ttl", format="longturtle")
 
 # switch CS IRI
-ttl = open("../../unggim-themes.ttl").read()
-open("../../unggim-themes.ttl", "w").write(
+ttl = open("../../vocabs/unggim-themes.ttl").read()
+open("../../vocabs/unggim-themes.ttl", "w").write(
     ttl.replace("PREFIX : <https://linkeddataops.adaptcentre.ie/vocabularies/unggim-data-themes#>",
                 f"PREFIX : <{NEW_CS}/>")
 )
