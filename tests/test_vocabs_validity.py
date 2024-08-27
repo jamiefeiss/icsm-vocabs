@@ -6,6 +6,7 @@ import pyshacl
 from rdflib import Graph
 
 REPO_DIR = Path(__file__).parent.parent.resolve()
+VOCABS_DIR = REPO_DIR / "vocabs"
 
 
 @pytest.fixture
@@ -17,10 +18,11 @@ def _get_vocpub_graph() -> Graph:
 
 def _get_vocab_files() -> List[Path]:
     vocab_directories = [
-        REPO_DIR / "cadastre",
-        # REPO_DIR / "geocoded-addressing",
-        # REPO_DIR / "transport",
-        # REPO_DIR / "place-names",
+        VOCABS_DIR,
+        # VOCABS_DIR / "Addresses",
+        # VOCABS_DIR / "LandParcels",
+        # VOCABS_DIR / "GeographicalNames",
+        # VOCABS_DIR / "TransportNetworks",
     ]
     files = []
 
@@ -39,3 +41,6 @@ def test_vocabs(vocab_file: List[Path], _get_vocpub_graph: Graph):
     )
 
     assert conforms, f"{vocab_file} failed:\n{results_text}"
+
+    vocab_file: Path
+    Graph().parse(vocab_file).serialize(destination=vocab_file, format="longturtle")

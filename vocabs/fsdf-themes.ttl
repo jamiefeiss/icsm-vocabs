@@ -1,13 +1,10 @@
 PREFIX : <https://linked.data.gov.au/def/fsdf/themes/>
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/fsdf/themes>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX droles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX fsdf: <https://linked.data.gov.au/def/fsdf/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX prov: <http://www.w3.org/ns/prov#>
-PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -478,48 +475,48 @@ There are an increasing number of these sensors available for both satellite and
     a
         skos:Concept ,
         fsdf:Theme ;
-    dcterms:source "https://ggim.un.org/documents/E-C20-2018-7-Add_1-Global-fundamental-geospatial-data-themes.pdf"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A building refers to any roofed structure permanently constructed or erected on its site, for the protection of humans, animals, things, or the production of economic goods. Settlements are collections of buildings and associated features where a community carries out socio-economic activities."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Buildings and Settlements"@en ;
     skos:topConceptOf cs: ;
+    schema:source "https://ggim.un.org/documents/E-C20-2018-7-Add_1-Global-fundamental-geospatial-data-themes.pdf"^^xsd:anyURI ;
 .
 
 :geology-and-soils
     a
         skos:Concept ,
         fsdf:Theme ;
-    dcterms:source "https://ggim.un.org/documents/E-C20-2018-7-Add_1-Global-fundamental-geospatial-data-themes.pdf"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Geology is the composition and properties of geologic materials (rocks and sediments) underground and outcropping at the Earth’s surface. It includes bedrock, aquifers, geomorphology for land and marine environments, mineral resources and overlying soils. Soils are the upper part of the Earth’s crust, formed by mineral particles, organic matter, water, air, and living organisms."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Geology and Soils"@en ;
     skos:topConceptOf cs: ;
+    schema:source "https://ggim.un.org/documents/E-C20-2018-7-Add_1-Global-fundamental-geospatial-data-themes.pdf"^^xsd:anyURI ;
 .
 
 :physical-infrastructure
     a
         skos:Concept ,
         fsdf:Theme ;
-    dcterms:source "https://ggim.un.org/documents/E-C20-2018-7-Add_1-Global-fundamental-geospatial-data-themes.pdf"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The Physical Infrastructure theme includes industrial & utility facilities, and the service delivery facilities associated with administrative & social governmental services such as public administrations, utilities, transport, civil protection, schools and hospitals."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Physical Infrastructure"@en ;
     skos:topConceptOf cs: ;
+    schema:source "https://ggim.un.org/documents/E-C20-2018-7-Add_1-Global-fundamental-geospatial-data-themes.pdf"^^xsd:anyURI ;
 .
 
 :population-distributions
     a
         skos:Concept ,
         fsdf:Theme ;
-    dcterms:source "https://ggim.un.org/documents/E-C20-2018-7-Add_1-Global-fundamental-geospatial-data-themes.pdf"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The Population Distribution theme covers the geographical distribution of people, including population characteristics."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Population Distributions"@en ;
     skos:topConceptOf cs: ;
+    schema:source "https://ggim.un.org/documents/E-C20-2018-7-Add_1-Global-fundamental-geospatial-data-themes.pdf"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/org/ga>
@@ -646,9 +643,9 @@ There are an increasing number of these sensors available for both satellite and
 
 cs:
     a skos:ConceptScheme ;
-    dcterms:provenance "This vocabulary was generated from the FSDF LINK website which containes all this information in non-Semantic Web but highly structured, form" ;
+    reg:status astatus:stable ;
+    owl:deprecated true ;
     owl:versionInfo "1.0"^^xsd:string ;
-    reg:status agldwgstatus:stable ;
     skos:definition "This FSDF Themes vocabulary is the taxonomy of dataset themes implemented by the [ANZLIC - The Spatial  Information Council](https://www.anzlic.gov.au)'s' Foundation Spatial Data Framework (FSDF) project which is \"a common reference for the assembly and maintenance of Australian and New Zealand foundation level spatial data\"" ;
     skos:hasTopConcept
         :administrative-boundaries ,
@@ -666,12 +663,12 @@ cs:
         :transport ,
         :water ;
     skos:historyNote "This vocabulary was developed by Geoscience Australia for ICSM vocabulary testing work in 2021" ;
-    skos:scopeNote "Use the UNGGIM Themes vocabulary for data classification instead of this one, wherever possible"
     skos:prefLabel "FSDF Themes" ;
+    skos:scopeNote "Use the UNGGIM Themes vocabulary for data classification instead of this one, wherever possible" ;
     schema:creator <https://linked.data.gov.au/org/ga> ;
     schema:dateCreated "2021-04-21"^^xsd:date ;
     schema:dateModified "2024-08-15"^^xsd:date ;
     schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
+    schema:provenance "This vocabulary was generated from the FSDF LINK website which containes all this information in non-Semantic Web but highly structured, form" ;
     schema:publisher <https://linked.data.gov.au/org/icsm> ;
-    owl:deprecated true ;
 .

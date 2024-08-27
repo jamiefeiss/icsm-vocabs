@@ -1,0 +1,72 @@
+PREFIX : <https://linked.data.gov.au/def/road-lane-count/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs: <https://linked.data.gov.au/def/road-lane-count>
+PREFIX droles: <https://linked.data.gov.au/def/data-roles/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX unggim: <https://linked.data.gov.au/def/unggim-themes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:one
+    a skos:Concept ;
+    skos:definition "Two vehicles cannot pass each other without both having to move off the formed surface"@en ;
+    skos:historyNote "Queensland Roads and Tracks dataset" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "One"@en ;
+.
+
+:two-or-more
+    a skos:Concept ;
+    skos:definition "Two vehicles can pass each other without having to move off the formed surface"@en ;
+    skos:historyNote "Queensland Roads and Tracks dataset" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Two or more"@en ;
+.
+
+:unknown
+    a skos:Concept ;
+    skos:definition "The lane count is not currently known"@en ;
+    skos:historyNote "Queensland Roads and Tracks dataset" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown"@en ;
+.
+
+<https://linked.data.gov.au/org/qsi>
+    a schema:Organization ;
+    schema:name "Queensland Spatial Information" ;
+    schema:url "https://www.resources.qld.gov.au/data-mapping"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    reg:status astatus:experimental ;
+    owl:versionIRI :1.0 ;
+    owl:versionInfo "1.0" ;
+    skos:definition "This vocabulary describes the number of lanes that indicate whether vehicles are able to travel past each other on the formed surface of the road. "@en ;
+    skos:hasTopConcept
+        :one ,
+        :two-or-more ,
+        :unknown ;
+    skos:historyNote "This vocabulary was created by the Queensland Spatial Information services." ;
+    skos:prefLabel "Road Lane Count"@en ;
+    prov:qualifiedAttribution
+        [
+            prov:agent <https://linked.data.gov.au/org/icsm> ;
+            prov:hadRole droles:custodian ;
+        ] ;
+    schema:creator <https://linked.data.gov.au/org/qsi> ;
+    schema:dateCreated "2023-05-30"^^xsd:date ;
+    schema:dateModified "2023-11-30"^^xsd:date ;
+    schema:identifier "road-lane-count"^^xsd:token ;
+    schema:keywords unggim:TransportNetworks ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.

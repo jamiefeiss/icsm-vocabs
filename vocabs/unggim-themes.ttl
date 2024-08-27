@@ -1,13 +1,11 @@
 PREFIX : <https://linked.data.gov.au/def/unggim-themes/>
 PREFIX cs: <https://linked.data.gov.au/def/unggim-themes>
-PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX fsdf: <https://linked.data.gov.au/def/fsdf/themes/>
 PREFIX fsdfcs: <https://linked.data.gov.au/def/fsdf/themes>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX vann: <http://purl.org/vocab/vann/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 fsdf:airports-and-airfields
@@ -404,12 +402,6 @@ There are an increasing number of these sensors available for both satellite and
     skos:prefLabel "Very High Resolution (<2.5 m) Very Low Temporal Coverage (>annual)"@en ;
 .
 
-<https://linked.data.gov.au/org/icsm>
-    a schema:Organization ;
-    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
-    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
-.
-
 :Buildings-Settlements
     a skos:Concept ;
     skos:definition "A Building refers to any roofed structure permanently constructed or erected on its site, for the protection of humans, animals, things, or the production of economic goods. Settlements are collections of buildings and associated features where a community carries out socio-economic activities." ;
@@ -441,6 +433,12 @@ There are an increasing number of these sensors available for both satellite and
     skos:inScheme cs: ;
     skos:prefLabel "Population Distribution"@en ;
     skos:topConceptOf cs: ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
 .
 
 <https://orcid.org/0000-0003-2130-0312>

@@ -6,6 +6,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX termtype: <https://linked.data.gov.au/def/csdm/termtypes/>
+PREFIX unggim: <https://linked.data.gov.au/def/unggim-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :normal
@@ -78,7 +79,7 @@ cs:
     schema:creator <https://linked.data.gov.au/org/csdm-pg> ;
     schema:dateCreated "2022-03-18"^^xsd:date ;
     schema:dateModified "2024-08-20"^^xsd:date ;
-    schema:keywords <https://linked.data.gov.au/def/unggim-themes/LandParcels> ;
+    schema:keywords unggim:LandParcels ;
     schema:publisher <https://linked.data.gov.au/org/icsm> ;
 .
 
