@@ -1,0 +1,148 @@
+PREFIX : <https://linked.data.gov.au/dataset/asgsed3/STE/>
+PREFIX cs: <https://linked.data.gov.au/dataset/asgsed3/STE>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:1
+    a
+        geo:Feature ,
+        skos:Concept ;
+    geo:sfWithin <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    skos:definition "The Australian state of New South Wales" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "New South Wales"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:2
+    a
+        geo:Feature ,
+        skos:Concept ;
+    geo:sfWithin <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    skos:definition "The Australian state of Victoria" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Victoria"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:3
+    a
+        geo:Feature ,
+        skos:Concept ;
+    geo:sfWithin <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    skos:definition "The Australian state of Queensland" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Queensland"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:4
+    a
+        geo:Feature ,
+        skos:Concept ;
+    geo:sfWithin <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    skos:definition "The Australian state of South Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "South Australia"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:5
+    a
+        geo:Feature ,
+        skos:Concept ;
+    geo:sfWithin <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    skos:definition "The Australian state of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Western Australia"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:6
+    a
+        geo:Feature ,
+        skos:Concept ;
+    geo:sfWithin <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    skos:definition "The Australian state of Tasmania" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Tasmania"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:7
+    a
+        geo:Feature ,
+        skos:Concept ;
+    geo:sfWithin <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    skos:definition "The Australian territory of Northern Territory" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Northern Territory"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:8
+    a
+        geo:Feature ,
+        skos:Concept ;
+    geo:sfWithin <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    skos:definition "The Australian territory of Australian Capital Territory" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Australian Capital Territory"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:9
+    a
+        geo:Feature ,
+        skos:Concept ;
+    geo:sfWithin <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    skos:definition "Other territories of Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Other Territories"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Z
+    a
+        geo:Feature ,
+        skos:Concept ;
+    geo:sfWithin <https://linked.data.gov.au/dataset/asgsed3/AUS/AUS> ;
+    skos:definition "Outside Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Outside Australia"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://linked.data.gov.au/org/abs>
+    a schema:Organization ;
+    schema:name "Australian Bureau of Statistics" ;
+    schema:url "https://abs.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a
+        geo:FeatureCollection ,
+        skos:ConceptScheme ;
+    geo:hasBoundingBox "POLYGON ((96 -45, 96 -9, 168 -9, 168 -45, 96 -45))" ;
+    skos:definition "Contains the second top-level Features of the ASGS Feature hierarchy: States & Territories"@en ;
+    skos:hasTopConcept
+        :1 ,
+        :2 ,
+        :3 ,
+        :4 ,
+        :5 ,
+        :6 ,
+        :7 ,
+        :8 ,
+        :9 ,
+        :Z ;
+    skos:prefLabel "States & Territories Feature Collection"@en ;
+    schema:citation "https://www.abs.gov.au/statistics/standards/australian-statistical-geography-standard-asgs-edition-3/jul2021-jun2026" ;
+    schema:creator <https://linked.data.gov.au/org/abs> ;
+    schema:dateCreated "2022-05-15"^^xsd:date ;
+    schema:dateModified "2022-05-15"^^xsd:date ;
+    schema:isPartOf <https://linked.data.gov.au/dataset/asgsed3> ;
+    schema:publisher <https://linked.data.gov.au/org/abs> ;
+.

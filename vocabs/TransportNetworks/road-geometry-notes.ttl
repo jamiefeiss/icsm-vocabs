@@ -1,0 +1,117 @@
+PREFIX : <https://linked.data.gov.au/def/road-geometry-notes/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs: <https://linked.data.gov.au/def/road-geometry-notes>
+PREFIX droles: <https://linked.data.gov.au/def/data-roles/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX unggim: <https://linked.data.gov.au/def/unggim-themes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:loop
+    a skos:Concept ;
+    skos:definition "Loop geometry allowed"@en ;
+    skos:historyNote "Queensland Roads and Tracks dataset" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Loop geometry"@en ;
+.
+
+:no-intersection
+    a skos:Concept ;
+    skos:definition "No intersection allowed"@en ;
+    skos:historyNote "Queensland Roads and Tracks dataset" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "No intersection"@en ;
+.
+
+:none
+    a skos:Concept ;
+    skos:definition "No geometry rule is broken"@en ;
+    skos:historyNote "Queensland Roads and Tracks dataset" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "None"@en ;
+.
+
+:orphaned-segment
+    a skos:Concept ;
+    skos:definition "Orphan segment allowed"@en ;
+    skos:historyNote "Queensland Roads and Tracks dataset" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Orphaned segment"@en ;
+.
+
+:overlap
+    a skos:Concept ;
+    skos:definition "Geometry overlap allowed"@en ;
+    skos:historyNote "Queensland Roads and Tracks dataset" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Geometry overlap"@en ;
+.
+
+:pseudo-segment
+    a skos:Concept ;
+    skos:definition "Pseudo segment allowed"@en ;
+    skos:historyNote "Queensland Roads and Tracks dataset" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Pseudo segment"@en ;
+.
+
+:short-segment
+    a skos:Concept ;
+    skos:definition "Length under 3m allowed"@en ;
+    skos:historyNote "Queensland Roads and Tracks dataset" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Length under 3m"@en ;
+.
+
+:unkown
+    a skos:Concept ;
+    skos:definition "Unknown if geometry rule is broken"@en ;
+    skos:historyNote "Queensland Roads and Tracks dataset" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Unknown"@en ;
+.
+
+<https://linked.data.gov.au/org/qsi>
+    a schema:Organization ;
+    schema:name "Queensland Spatial Information" ;
+    schema:url "https://www.resources.qld.gov.au/data-mapping"^^xsd:anyURI ;
+.
+
+<https://linked.data.gov.au/org/icsm>
+    a schema:Organization ;
+    schema:name "Intergovernmental Committee on Surveying & Mapping" ;
+    schema:url "https://icsm.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    reg:status astatus:experimental ;
+    owl:versionIRI :1.0 ;
+    owl:versionInfo "1.0" ;
+    skos:definition "This vocabulary describes notes related to the geometry of a road segment. These notes indicate where the geometry has an exception to a geometry rule but is still valid. "@en ;
+    skos:hasTopConcept
+        :loop ,
+        :no-intersection ,
+        :none ,
+        :orphaned-segment ,
+        :overlap ,
+        :pseudo-segment ,
+        :short-segment ,
+        :unkown ;
+    skos:historyNote "This vocabulary was created by the Queensland Spatial Information services." ;
+    skos:prefLabel "Road Geometry Notes"@en ;
+    prov:qualifiedAttribution
+        [
+            prov:agent <https://linked.data.gov.au/org/icsm> ;
+            prov:hadRole droles:custodian ;
+        ] ;
+    schema:creator <https://linked.data.gov.au/org/qsi> ;
+    schema:dateCreated "2023-06-06"^^xsd:date ;
+    schema:dateModified "2023-11-30"^^xsd:date ;
+    schema:identifier "road-geometry-notes"^^xsd:token ;
+    schema:keywords unggim:TransportNetworks ;
+    schema:publisher <https://linked.data.gov.au/org/icsm> ;
+.
