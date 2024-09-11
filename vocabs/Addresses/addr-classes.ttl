@@ -10,6 +10,11 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX unggim: <https://linked.data.gov.au/def/unggim-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/def/location-addressing/DTSpecCode> a rdfs:Datatype ;
+    sdo:name "Queensland Location Addresses Data Transfer Specification Code" ;
+    sdo:description "The datatype code to use for the address data exchange system as seen in the Queensland Location Addresses Data Transfer Specification" ;
+.
+
 :landmark
     a skos:Concept ;
     skos:altLabel "LA"@en ;
@@ -46,6 +51,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Address assigned according to the standard for a site accessed from a rural road"@en ;
     skos:historyNote "Queensland address data" ;
     skos:inScheme cs: ;
+    skos:notation "R"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Rural"@en ;
 .
 
@@ -55,6 +61,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Address assigned according to the standard for a site accessed from an urban road"@en ;
     skos:historyNote "Queensland address data" ;
     skos:inScheme cs: ;
+    skos:notation "U"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Urban"@en ;
 .
 
@@ -76,6 +83,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Unknown address assignation standard"@en ;
     skos:historyNote "Queensland address data" ;
     skos:inScheme cs: ;
+    skos:notation "X"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Unknown"@en ;
 .
 
@@ -85,6 +93,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Address assigned according to one of the standards for a site accessed from a water feature or island"@en ;
     skos:historyNote "Queensland address data" ;
     skos:inScheme cs: ;
+    skos:notation "W"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:narrower
         :water-inlet ,
         :water-island ,

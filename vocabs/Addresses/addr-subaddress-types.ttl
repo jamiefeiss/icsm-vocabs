@@ -10,6 +10,11 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX unggim: <https://linked.data.gov.au/def/unggim-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/def/location-addressing/DTSpecCode> a rdfs:Datatype ;
+    sdo:name "Queensland Location Addresses Data Transfer Specification Code" ;
+    sdo:description "The datatype code to use for the address data exchange system as seen in the Queensland Location Addresses Data Transfer Specification" ;
+.
+
 :antenna
     a skos:Concept ;
     skos:altLabel "ANT"@en ;
@@ -26,6 +31,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "APT"@en ;
     skos:definition "Apartment"@en ;
     skos:inScheme cs: ;
+    skos:notation "APT"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Apartment"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -157,6 +163,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "CTGE"@en ;
     skos:definition "Cottage"@en ;
     skos:inScheme cs: ;
+    skos:notation "CTGE"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Cottage"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -168,6 +175,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "DUPL"@en ;
     skos:definition "Duplex"@en ;
     skos:inScheme cs: ;
+    skos:notation "DUPL"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Duplex"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -179,6 +187,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "FCTY"@en ;
     skos:definition "Factory"@en ;
     skos:inScheme cs: ;
+    skos:notation "FCTY"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Factory"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -190,6 +199,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "FLAT"@en ;
     skos:definition "Flat"@en ;
     skos:inScheme cs: ;
+    skos:notation "FLAT"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Flat"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -223,6 +233,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "HSE"@en ;
     skos:definition "House"@en ;
     skos:inScheme cs: ;
+    skos:notation "HSE"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "House"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -234,6 +245,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "KSK"@en ;
     skos:definition "Kiosk"@en ;
     skos:inScheme cs: ;
+    skos:notation "KSK"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Kiosk"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -289,6 +301,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "MSNT"@en ;
     skos:definition "Maisonette"@en ;
     skos:inScheme cs: ;
+    skos:notation "MSNT"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Maisonette"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -300,6 +313,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "MBTH"@en ;
     skos:definition "Marine Berth"@en ;
     skos:inScheme cs: ;
+    skos:notation "MBTH"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Marine Berth"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -311,6 +325,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "OFFC"@en ;
     skos:definition "Office"@en ;
     skos:inScheme cs: ;
+    skos:notation "OFFC"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Office"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -322,6 +337,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "PTHS"@en ;
     skos:definition "Penthouse"@en ;
     skos:inScheme cs: ;
+    skos:notation "PTHS"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Penthouse"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "QLD address data" ;
@@ -343,6 +359,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "ROOM"@en ;
     skos:definition "Room"@en ;
     skos:inScheme cs: ;
+    skos:notation "ROOM"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Room"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -354,6 +371,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "SHED"@en ;
     skos:definition "Shed"@en ;
     skos:inScheme cs: ;
+    skos:notation "SHED"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Shed"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -365,6 +383,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "SHOP"@en ;
     skos:definition "Shop"@en ;
     skos:inScheme cs: ;
+    skos:notation "SHOP"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Shop"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -398,6 +417,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "SITE"@en ;
     skos:definition "Site"@en ;
     skos:inScheme cs: ;
+    skos:notation "SITE"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Site"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -409,6 +429,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "STLL"@en ;
     skos:definition "Stall"@en ;
     skos:inScheme cs: ;
+    skos:notation "STLL"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Stall"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -442,6 +463,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "STU"@en ;
     skos:definition "Studio"@en ;
     skos:inScheme cs: ;
+    skos:notation "STU"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Studio"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -475,6 +497,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "SE"@en ;
     skos:definition "Suite"@en ;
     skos:inScheme cs: ;
+    skos:notation "SE"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Suite"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -508,6 +531,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "TNHS"@en ;
     skos:definition "Townhouse"@en ;
     skos:inScheme cs: ;
+    skos:notation "TNHS"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Townhouse"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -521,6 +545,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "UNIT"@en ;
     skos:definition "Unit"@en ;
     skos:inScheme cs: ;
+    skos:notation "U"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Unit"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -543,6 +568,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "VLLA"@en ;
     skos:definition "Villa"@en ;
     skos:inScheme cs: ;
+    skos:notation "VLLA"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Villa"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -554,6 +580,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "WARD"@en ;
     skos:definition "Ward"@en ;
     skos:inScheme cs: ;
+    skos:notation "WARD"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Ward"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
@@ -565,6 +592,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel "WHSE"@en ;
     skos:definition "Warehouse"@en ;
     skos:inScheme cs: ;
+    skos:notation "WHSE"^^<https://linked.data.gov.au/def/location-addressing/DTSpecCode> ;
     skos:prefLabel "Warehouse"@en ;
     skos:topConceptOf cs: ;
     schema:provenance "AS4590.1:2017" ;
